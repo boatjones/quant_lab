@@ -1,0 +1,29 @@
+# documents
+BeginningSteps.odt
+QuantJourney.odt
+
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Secrets
+*.env
+secrets/
+config/api_keys.json
+
+# Data
+*.csv
+*.h5
+*.parquet
+*.zip
+*.db
+*.sqlite
+
+# Streamlit cache
+.streamlit/
+
+# Quicken Exports
+port_data/

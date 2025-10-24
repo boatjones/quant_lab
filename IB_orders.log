@@ -1,0 +1,25 @@
+[2025-10-20 14:35:47] ClientID=3 | BUY 20 IESC Type=limitEqOrder @ 379 | Trail%=None TrailStop=None
+[2025-10-20 14:36:07] ClientID=3 | BUY 10 FIX Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-20 16:59:29] ClientID=3 | BUY 25 CLS Type=limitEqOrder @ 264 | Trail%=None TrailStop=None
+[2025-10-21 10:20:35] ClientID=3 | BUY 20 IESC Type=limitEqOrder @ 379 | Trail%=None TrailStop=None
+[2025-10-21 10:20:47] ClientID=3 | BUY 25 CLS Type=limitEqOrder @ 264 | Trail%=None TrailStop=None
+[2025-10-21 10:21:16] ClientID=3 | BUY 25 AGX Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 10:21:59] ClientID=3 | BUY 15 UI Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 11:58:27] ClientID=3 | BUY 60 KTOS Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 12:11:05] ClientID=3 | BUY 30 DAVE Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 12:56:19] ClientID=3 | BUY 70 RMBS Type=limitEqOrder @ 95.5 | Trail%=None TrailStop=None
+[2025-10-21 12:56:58] ClientID=3 | BUY 250 TOST Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 13:08:41] ClientID=3 | BUY 50 TMDX Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 13:19:58] ClientID=3 | BUY 35 VRT Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 14:00:12] ClientID=3 | BUY 35 ARM Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 14:11:41] ClientID=3 | BUY 55 CAMT Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 14:37:02] ClientID=3 | BUY 30 CRS Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 14:49:47] ClientID=3 | BUY 40 AMZN Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 15:01:54] ClientID=3 | BUY 50 QCOM Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 15:32:14] ClientID=3 | BUY 15 CRWD Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-21 15:32:22] ClientID=3 | SELL 15 CRWD Type=trailStopEqOrder | Trail%=3.1437570571106 TrailStop=488.94
+[2025-10-22 14:40:46] ClientID=3 | SELL 60 KTOS Type=marketEqOrder | Trail%=None TrailStop=None
+[2025-10-22 14:45:53] ClientID=3 | SELL 25 CLS Type=trailStopEqOrder | Trail%=7.0 TrailStop=0.0
+[2025-10-22 16:38:12] ClientID=3 | SELL 25 CLS Type=trailStopEqOrder @ 0.0 | Trail%=7.0 TrailStop=0.0
+[2025-10-22 16:39:42] ClientID=3 | SELL 250 TOST Type=stopEqOrder @ 4.0 | Trail%=None TrailStop=None
+[2025-10-22 16:46:21] ClientID=3 | SELL 250 TOST Type=trailStopEqOrder @ 4.0 | Trail%=7.0 TrailStop=4.0

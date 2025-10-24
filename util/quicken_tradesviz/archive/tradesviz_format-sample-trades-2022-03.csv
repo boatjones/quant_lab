@@ -1,0 +1,259 @@
+date,symbol,side,currency,underlying,asset_type,price,quantity,commission,fees,tags,notes,spread_id
+2021-04-12T15:21:43-0400,"AMD Apr 16, 2021 81.00 CALL",buy,USD,AMD,stock_option,0.52,5,2.5,0.07,,,1ivscJVY
+2021-03-31T10:34:29-0400,"AMD Apr 16, 2021 81.00 CALL",sell,USD,AMD,stock_option,1.1,5,2.5,0.09,,,1ivscJVY
+2020-03-26T09:47:19-0400,SPXS,sell,USD,SPXS,stock,17.95,200,0,0.02,STRATEGY-1,,1ZDssL4S
+2020-03-26T10:02:34-0400,SPXS,buy,USD,SPXS,stock,17.48,200,0,0,STRATEGY-1,,1ZDssL4S
+2020-03-18T11:59:20-0400,"SPY Apr 17, 2020 285.00 CALL",sell,USD,SPY,stock_option,2.45,2,0,0.3,,,3R7RNwgg
+2020-03-18T10:11:11-0400,"SPY Apr 17, 2020 285.00 CALL",buy,USD,SPY,stock_option,2.41,1,1,0.14,,,3R7RNwgg
+2020-03-18T11:15:00-0400,"SPY Apr 17, 2020 285.00 CALL",buy,USD,SPY,stock_option,2,2,2,0.28,,,3R7RNwgg
+2020-03-18T10:28:50-0400,"SPY Apr 17, 2020 285.00 CALL",buy,USD,SPY,stock_option,2.42,1,1,0.14,,,3R7RNwgg
+2020-03-18T12:10:56-0400,"SPY Apr 17, 2020 285.00 CALL",sell,USD,SPY,stock_option,2.4,2,0,0.3,,,3R7RNwgg
+2020-03-17T09:47:07-0400,ET,buy,USD,ET,stock,5.59,30,0,0.02,M-FORM,,4gWuMMpM
+2020-05-12T10:16:08-0400,ET,sell,USD,ET,stock,7.95,30,0,0.04,M-FORM,,4gWuMMpM
+2020-06-02T10:15:34-0400,SNAP,sell,USD,SNAP,stock,19.62,500,2.99,0,"inEFFICIENT-EXIT,MKOPEN-TRD,STRATEGY-1",,4qy4vHSw
+2020-06-02T10:00:24-0400,SNAP,buy,USD,SNAP,stock,19.5,500,2.99,0,"inEFFICIENT-EXIT,MKOPEN-TRD,STRATEGY-1",,4qy4vHSw
+2021-04-06T14:45:46-0400,"TSLA Apr 16, 2021 625.00 PUT",sell,USD,TSLA,stock_option,6.2,1,0.5,0.02,,,5ljqF8dq
+2021-04-13T10:29:18-0400,"TSLA Apr 16, 2021 625.00 PUT",buy,USD,TSLA,stock_option,0.36,1,0.5,0.01,,,5ljqF8dq
+2019-04-18T12:09:01-0400,PINS,buy,USD,PINS,stock,24.9,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:00-0400,PINS,buy,USD,PINS,stock,24.92,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:00-0400,PINS,buy,USD,PINS,stock,24.91,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:00-0400,PINS,buy,USD,PINS,stock,24.93,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:01-0400,PINS,buy,USD,PINS,stock,24.82,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:01-0400,PINS,buy,USD,PINS,stock,24.82,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:02-0400,PINS,buy,USD,PINS,stock,24.88,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:00-0400,PINS,buy,USD,PINS,stock,24.93,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:58-0400,PINS,sell,USD,PINS,stock,24.58,1100,6.1906,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:03-0400,PINS,buy,USD,PINS,stock,24.87,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:03-0400,PINS,buy,USD,PINS,stock,24.87,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2019-04-18T12:09:02-0400,PINS,buy,USD,PINS,stock,24.88,100,1,0,"CHOP,M-FORM,NO-RANGE",<p>It was an easy <u>M-/Double-top formation</u>!&nbsp;</p><p>Why did I even trade the top?? I forgot my resistance lines today and made this mess of a trade - easy and clean setup but I failed due to bad preparation.</p>,5RfNkxME
+2022-02-24T01:02:51-0500,NZDCHF,sell,CHF,NZDCHF,forex,0.67581816,300,0,0,,,5X6r3kyv
+2022-02-23T14:40:00-0500,NZDCHF,buy,CHF,NZDCHF,forex,0.67783501,300,0,0,,,5X6r3kyv
+2020-03-18T15:56:03-0400,SPXL,sell,USD,SPXL,stock,22.03,20,0,0.03,BAD-MAE,<p>High risk trade!</p><p>Things I should NOT have done:</p><ul><li>Average down</li><li>Ignore mid-term indicator warnings&nbsp;</li></ul><p>Why? It's a leveraged ETF!</p>,5ZbPsykC
+2020-03-18T13:43:42-0400,SPXL,buy,USD,SPXL,stock,20.35,10,0,0.01,BAD-MAE,<p>High risk trade!</p><p>Things I should NOT have done:</p><ul><li>Average down</li><li>Ignore mid-term indicator warnings&nbsp;</li></ul><p>Why? It's a leveraged ETF!</p>,5ZbPsykC
+2020-03-18T13:57:57-0400,SPXL,buy,USD,SPXL,stock,19.5,10,0,0.01,BAD-MAE,<p>High risk trade!</p><p>Things I should NOT have done:</p><ul><li>Average down</li><li>Ignore mid-term indicator warnings&nbsp;</li></ul><p>Why? It's a leveraged ETF!</p>,5ZbPsykC
+2021-04-22T10:46:24-0400,"TSLA Apr 23, 2021 650.00 PUT",buy,USD,TSLA,stock_option,0.3,1,0.5,0.01,STRATEGY-1,,9JrdXBVX
+2021-04-14T15:41:44-0400,"TSLA Apr 23, 2021 650.00 PUT",sell,USD,TSLA,stock_option,4.4,1,0.5,0.02,STRATEGY-1,,9JrdXBVX
+2021-11-15T10:15:19-0500,ESH22,buy,USD,ES,future,4680.75,5,2.35,0,,,qABPqaTP
+2021-11-15T10:42:18-0500,ESH22,sell,USD,ES,future,4680.25,5,2.35,0,,,qABPqaTP
+2020-06-02T12:20:34-0400,AMD,buy,USD,AMD,stock,52.53,250,0.99,0,"inEFFICIENT-EXIT,STRATEGY-1",,at66opeV
+2020-06-02T12:55:10-0400,AMD,sell,USD,AMD,stock,52.4,250,0.99,0,"inEFFICIENT-EXIT,STRATEGY-1",,at66opeV
+2020-03-17T12:49:59-0400,VEU,buy,USD,VEU,stock,38.42,20,0,0.02,SWING-TRADE,"<div>Good exit!</div><div><br></div><div>Waited almost 2 months - I don't swing a lot of stocks, but wanted to test the waters with this.</div>",B16HObTC
+2020-05-12T10:31:59-0400,VEU,sell,USD,VEU,stock,44.08,1,0,0.01,SWING-TRADE,"<div>Good exit!</div><div><br></div><div>Waited almost 2 months - I don't swing a lot of stocks, but wanted to test the waters with this.</div>",B16HObTC
+2020-05-12T10:31:59-0400,VEU,sell,USD,VEU,stock,44.08,19,0,0.04,SWING-TRADE,"<div>Good exit!</div><div><br></div><div>Waited almost 2 months - I don't swing a lot of stocks, but wanted to test the waters with this.</div>",B16HObTC
+2022-02-11T22:54:46-0500,XAUUSD,sell,USD,XAUUSD,forex,1860.41,10,0,0,,,BE0gWip6
+2022-02-11T22:34:13-0500,XAUUSD,buy,USD,XAUUSD,forex,1862.76,10,0,0,,,BE0gWip6
+2022-03-10T10:57:33-0500,MSFT,sell,USD,MSFT,stock,282.38,100,0,0,STRATEGY-1,,BXzssGwA
+2022-03-10T10:47:22-0500,MSFT,buy,USD,MSFT,stock,283.63,100,0.99,0,STRATEGY-1,,BXzssGwA
+2021-06-05T05:53:15-0400,JD,buy,USD,JD,stock,77,200,0,0,,,ciw14PIR
+2021-07-01T10:59:49-0400,JD,sell,USD,JD,stock,78.1541,200,0,0.1,,,ciw14PIR
+2022-03-16T10:31:55-0400,AAPL,buy,USD,AAPL,stock,158.01,50,0,0,"CHOP,NO-RANGE",<p>Very choppy - no range. </p><p><b>Should have waited!</b></p><p>no-trade-day.</p><p>Risky.</p>,d6WJCem0
+2022-03-16T11:01:21-0400,AAPL,sell,USD,AAPL,stock,158.27,100,0,0,"CHOP,NO-RANGE",<p>Very choppy - no range. </p><p><b>Should have waited!</b></p><p>no-trade-day.</p><p>Risky.</p>,d6WJCem0
+2022-03-16T10:44:56-0400,AAPL,buy,USD,AAPL,stock,157.79,50,0,0,"CHOP,NO-RANGE",<p>Very choppy - no range. </p><p><b>Should have waited!</b></p><p>no-trade-day.</p><p>Risky.</p>,d6WJCem0
+2019-04-05T10:15:38-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:38-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:17:01-0400,AMD,buy,USD,AMD,stock,28.95,1000,5,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:38-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:38-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:38-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:39-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:39-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:40-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:38-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-05T10:15:38-0400,AMD,sell,USD,AMD,stock,29.01,100,1.0496,0,"MKOPEN-TRD,STRATEGY-1",,DiSSh5Ah
+2019-04-09T10:09:35-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:12:53-0400,AMD,buy,USD,AMD,stock,27.97,2000,10,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:35-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:35-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:35-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:35-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:37-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:33-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:33-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:32-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:32-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:32-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:32-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:32-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:33-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:33-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:33-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:33-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:33-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:35-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2019-04-09T10:09:35-0400,AMD,sell,USD,AMD,stock,27.9,100,1.0482,0,MKOPEN-TRD,<p>Got the direction correct! But MACD shaked me out.&nbsp;</p><ul><li>Should have waited for more confirmation!</li><li>Probably should have scaled and let some shares run</li></ul>,eCNOkLO9
+2021-11-15T10:45:16-0500,ESH22,sell,USD,ES,future,4682.5,3,1.41,0,,,qABPqaTP
+2021-11-15T10:57:38-0500,ESH22,buy,USD,ES,future,4684,3,1.41,0,,,qABPqaTP
+2021-12-15T10:07:22-0500,ESH22,sell,USD,ES,future,4623.5,3,1.41,0,,,PCkstXU0
+2021-12-15T10:07:32-0500,ESH22,buy,USD,ES,future,4622.5,3,1.41,0,,,PCkstXU0
+2022-01-10T12:16:05-0500,ESH22,buy,USD,ES,future,4591.75,1,0.47,0,,,IfJ5T6xU
+2022-01-10T12:42:17-0500,ESH22,sell,USD,ES,future,4593.75,1,0.47,0,,,IfJ5T6xU
+2022-01-21T09:35:11-0500,ESH22,buy,USD,ES,future,4468.25,3,1.41,0,,,PqqEAfD4
+2022-01-21T09:35:31-0500,ESH22,sell,USD,ES,future,4467,3,1.41,0,,,PqqEAfD4
+2021-11-06T07:15:06-0400,CHWY,sell,USD,CHWY,stock,70,200,0,0,,,eh87ToSt
+2021-09-25T05:31:33-0400,CHWY,buy,USD,CHWY,stock,71,200,0,0,,,eh87ToSt
+2021-05-28T16:01:46-0400,"GSPC Jul 09, 2021 3990.00 PUT",buy,USD,GSPC,index_option,28.97,1,0,0,DBL DIAG,,f2SLcOtk
+2021-05-28T16:01:46-0400,"GSPC Jul 16, 2021 4260.00 CALL",sell,USD,GSPC,index_option,49.05,1,0,0,DBL DIAG,,f2SLcOtk
+2021-05-18T15:46:32-0400,"GSPC Jul 09, 2021 4260.00 CALL",sell,USD,GSPC,index_option,37.42,1,0,0,DBL DIAG,,f2SLcOtk
+2021-05-18T15:46:32-0400,"GSPC Jul 16, 2021 3990.00 PUT",buy,USD,GSPC,index_option,78.67,1,0,0,DBL DIAG,,f2SLcOtk
+2021-05-18T15:46:32-0400,"GSPC Jul 16, 2021 4260.00 CALL",buy,USD,GSPC,index_option,44.09,1,0,0,DBL DIAG,,f2SLcOtk
+2021-05-18T15:46:32-0400,"GSPC Jul 09, 2021 3990.00 PUT",sell,USD,GSPC,index_option,69.99,1,0,0,DBL DIAG,,f2SLcOtk
+2021-05-28T16:01:46-0400,"GSPC Jul 09, 2021 4260.00 CALL",buy,USD,GSPC,index_option,41.59,1,0,0,DBL DIAG,,f2SLcOtk
+2021-05-28T16:01:46-0400,"GSPC Jul 16, 2021 3990.00 PUT",sell,USD,GSPC,index_option,35.16,1,0,0,DBL DIAG,,f2SLcOtk
+2022-01-21T09:37:00-0500,ESH22,buy,USD,ES,future,4467.25,3,1.41,0,,,PqqEAfD4
+2022-01-21T09:37:01-0500,ESH22,sell,USD,ES,future,4466.75,3,1.41,0,,,PqqEAfD4
+2022-01-21T09:47:17-0500,ESH22,sell,USD,ES,future,4459,3,1.41,0,,,PqqEAfD4
+2022-01-21T09:55:30-0500,ESH22,buy,USD,ES,future,4442,3,1.41,0,,,PqqEAfD4
+2022-01-21T10:00:52-0500,ESH22,buy,USD,ES,future,4447,3,1.41,0,,,PqqEAfD4
+2022-01-21T10:15:47-0500,ESH22,sell,USD,ES,future,4427,3,1.41,0,,,PqqEAfD4
+2022-01-12T09:56:15-0500,OPEN,buy,USD,OPEN,stock,12.6699,500,0,0,"CHOP,NO-RANGE",,F7gM8T4h
+2022-01-12T11:01:42-0500,OPEN,sell,USD,OPEN,stock,12.82,500,0,0,"CHOP,NO-RANGE",,F7gM8T4h
+2021-05-12T13:45:12-0400,"GSPC Aug 20, 2021 4610.00 CALL",buy,USD,GSPC,index_option,7.23,1,0,0,"Iron Condor,STRATEGY-1",,fDR7BJPa
+2021-05-25T15:15:22-0400,"GSPC Aug 20, 2021 3610.00 PUT",buy,USD,GSPC,index_option,36.6,1,0,0,"Iron Condor,STRATEGY-1",,fDR7BJPa
+2021-05-12T13:45:12-0400,"GSPC Aug 20, 2021 3560.00 PUT",buy,USD,GSPC,index_option,65.11,1,2,2.36,"Iron Condor,STRATEGY-1",,fDR7BJPa
+2021-05-12T13:45:12-0400,"GSPC Aug 20, 2021 4560.00 CALL",sell,USD,GSPC,index_option,10.6,1,0,0,"Iron Condor,STRATEGY-1",,fDR7BJPa
+2021-05-25T15:15:22-0400,"GSPC Aug 20, 2021 3560.00 PUT",sell,USD,GSPC,index_option,32.92,1,2,2.36,"Iron Condor,STRATEGY-1",,fDR7BJPa
+2021-05-12T13:45:12-0400,"GSPC Aug 20, 2021 3610.00 PUT",sell,USD,GSPC,index_option,70.73,1,0,0,"Iron Condor,STRATEGY-1",,fDR7BJPa
+2021-05-25T15:15:22-0400,"GSPC Aug 20, 2021 4610.00 CALL",sell,USD,GSPC,index_option,6.05,1,0,0,"Iron Condor,STRATEGY-1",,fDR7BJPa
+2021-05-25T15:15:22-0400,"GSPC Aug 20, 2021 4560.00 CALL",buy,USD,GSPC,index_option,9.07,1,0,0,"Iron Condor,STRATEGY-1",,fDR7BJPa
+2021-12-04T12:34:13-0500,BLNK,sell,USD,BLNK,stock,31.29,100,0,0,,,g5bOLmWp
+2021-12-22T09:45:57-0500,BLNK,buy,USD,BLNK,stock,28.09,100,0,0,,,g5bOLmWp
+2020-03-24T15:30:03-0400,SPXL,sell,USD,SPXL,stock,22,20,0,0.03,,,gKuRIIJy
+2020-03-20T15:53:47-0400,SPXL,buy,USD,SPXL,stock,19.22,20,0,0.02,,,gKuRIIJy
+2022-01-21T10:30:21-0500,ESH22,buy,USD,ES,future,4435.5,3,1.41,0,,,PqqEAfD4
+2022-01-21T10:30:24-0500,ESH22,sell,USD,ES,future,4440,3,1.41,0,,,PqqEAfD4
+2022-02-23T09:32:52-0500,TQQQ,sell,USD,TQQQ,stock,50.23,100,0,0,,,gLUjogbD
+2022-02-23T09:18:53-0500,TQQQ,buy,USD,TQQQ,stock,50.57,100,0,0,,,gLUjogbD
+2021-05-18T11:56:41-0400,"GSPC Jun 18, 2021 4060.00 PUT",sell,USD,GSPC,index_option,55.02,1,0,0,Butterfly Long Put,,HKalWAtN
+2021-05-14T14:12:46-0400,"GSPC Jun 18, 2021 4160.00 PUT",sell,USD,GSPC,index_option,71.93,2,0,0,Butterfly Long Put,,HKalWAtN
+2021-05-18T11:56:41-0400,"GSPC Jun 18, 2021 4260.00 PUT",sell,USD,GSPC,index_option,141.57,1,0,0,Butterfly Long Put,,HKalWAtN
+2021-05-18T11:56:41-0400,"GSPC Jun 18, 2021 4160.00 PUT",buy,USD,GSPC,index_option,86.42,2,2,2.69,Butterfly Long Put,,HKalWAtN
+2021-05-14T14:12:46-0400,"GSPC Jun 18, 2021 4060.00 PUT",buy,USD,GSPC,index_option,47.03,1,2,2.69,Butterfly Long Put,,HKalWAtN
+2021-05-14T14:12:46-0400,"GSPC Jun 18, 2021 4260.00 PUT",buy,USD,GSPC,index_option,119.2,1,0,0,Butterfly Long Put,,HKalWAtN
+2022-01-28T14:30:28-0500,ESH22,buy,USD,ES,future,4328,1,2.25,1.19,,,V32oQUGK
+2022-01-28T14:38:52-0500,ESH22,sell,USD,ES,future,4334,1,2.25,1.19,,,V32oQUGK
+2020-05-22T13:47:44-0400,"AAPL May 22, 2020 320.00 CALL",sell,USD,AAPL,stock_option,0.15,10,6.5,0.065,"Iron Condor,STRATEGY-1",,IPQ8c4uS
+2020-05-22T13:56:43-0400,"AAPL May 22, 2020 317.50 CALL",sell,USD,AAPL,stock_option,0.93,10,6.5,0.08,"Iron Condor,STRATEGY-1",,IPQ8c4uS
+2020-05-22T13:47:44-0400,"AAPL May 22, 2020 315.00 PUT",buy,USD,AAPL,stock_option,0.16,10,6.5,0.065,"Iron Condor,STRATEGY-1",,IPQ8c4uS
+2020-05-22T13:53:52-0400,"AAPL May 22, 2020 315.00 PUT",sell,USD,AAPL,stock_option,0.17,10,6.5,0.07,"Iron Condor,STRATEGY-1",,IPQ8c4uS
+2020-05-22T13:47:44-0400,"AAPL May 22, 2020 317.50 CALL",buy,USD,AAPL,stock_option,1.04,10,6.5,0.065,"Iron Condor,STRATEGY-1",,IPQ8c4uS
+2020-05-22T13:54:13-0400,"AAPL May 22, 2020 320.00 CALL",buy,USD,AAPL,stock_option,0.11,10,6.5,0.06,"Iron Condor,STRATEGY-1",,IPQ8c4uS
+2020-05-22T13:53:41-0400,"AAPL May 22, 2020 312.50 PUT",buy,USD,AAPL,stock_option,0.06,10,6.5,0.06,"Iron Condor,STRATEGY-1",,IPQ8c4uS
+2020-05-22T13:47:44-0400,"AAPL May 22, 2020 312.50 PUT",sell,USD,AAPL,stock_option,0.06,10,6.5,0.065,"Iron Condor,STRATEGY-1",,IPQ8c4uS
+2020-05-22T14:22:10-0400,AUDUSD,buy,USD,AUDUSD,forex,0.6536,100,0,0,STRATEGY-1,,IuKoE4tx
+2020-05-22T14:24:52-0400,AUDUSD,sell,USD,AUDUSD,forex,0.6537,100,0,0,STRATEGY-1,,IuKoE4tx
+2022-02-10T10:01:19-0500,ESH22,sell,USD,ES,future,4565.25,1,0.47,0,,,f4CBQh8D
+2022-02-10T10:01:41-0500,ESH22,buy,USD,ES,future,4563.75,1,0.47,0,,,f4CBQh8D
+2022-02-10T10:15:37-0500,ESH22,buy,USD,ES,future,4565.75,1,0.47,0,,,f4CBQh8D
+2022-02-10T10:22:36-0500,ESH22,sell,USD,ES,future,4561.75,1,0.47,0,,,f4CBQh8D
+2019-04-17T10:46:31-0400,LYFT,buy,USD,LYFT,stock,57.23,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:33-0400,LYFT,buy,USD,LYFT,stock,57.24,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:30-0400,LYFT,buy,USD,LYFT,stock,57.23,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:30-0400,LYFT,buy,USD,LYFT,stock,57.23,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:34-0400,LYFT,buy,USD,LYFT,stock,57.22,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:31-0400,LYFT,buy,USD,LYFT,stock,57.23,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:30-0400,LYFT,buy,USD,LYFT,stock,57.23,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:33-0400,LYFT,buy,USD,LYFT,stock,57.24,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:34-0400,LYFT,buy,USD,LYFT,stock,57.24,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:32-0400,LYFT,buy,USD,LYFT,stock,57.24,100,1,0,,,jlBMDJNE
+2019-04-17T10:47:20-0400,LYFT,sell,USD,LYFT,stock,57.46,1300,8.2009,0,,,jlBMDJNE
+2019-04-17T10:46:32-0400,LYFT,buy,USD,LYFT,stock,57.22,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:31-0400,LYFT,buy,USD,LYFT,stock,57.24,100,1,0,,,jlBMDJNE
+2019-04-17T10:46:31-0400,LYFT,buy,USD,LYFT,stock,57.23,100,1,0,,,jlBMDJNE
+2022-02-10T10:24:24-0500,ESH22,buy,USD,ES,future,4564,1,0.47,0,,,f4CBQh8D
+2022-02-10T10:29:04-0500,ESH22,sell,USD,ES,future,4559.5,1,0.47,0,,,f4CBQh8D
+2019-04-10T10:18:40-0400,"NTES Apr 12, 2019 280.00 CALL",sell,USD,NTES,stock_option,0.45,1,1.9364,0,,,KGOQixDo
+2019-04-08T14:56:05-0400,"NTES Apr 12, 2019 280.00 CALL",buy,USD,NTES,stock_option,3.1,1,1.9438,0,,,KGOQixDo
+2019-04-08T14:07:05-0400,"PANW Apr 12, 2019 240.00 CALL",buy,USD,PANW,stock_option,3,1,1.5738,0,,,l2J5wLeS
+2019-04-10T10:18:03-0400,"PANW Apr 12, 2019 240.00 CALL",sell,USD,PANW,stock_option,4.75,1,1.102,0,,,l2J5wLeS
+2019-04-10T15:51:16-0400,"NFLX Apr 18, 2019 390.00 CALL",buy,USD,NFLX,stock_option,4.8,1,1.0838,0,STRATEGY-1,,LmLzgloj
+2019-04-12T14:56:24-0400,"NFLX Apr 18, 2019 390.00 CALL",sell,USD,NFLX,stock_option,1.73,1,1.528,0,STRATEGY-1,,LmLzgloj
+2022-03-22T10:30:45-0400,NVDA,sell,USD,NVDA,stock,270.12,50,0,0,,"<p>Could have squeezed in a little more profit, but ATR was very high and I was not able to read the market.</p><p>Best that I was able to exit early with little profit because stock went down after 11am.</p>",LtOsGlB6
+2022-03-22T10:23:11-0400,NVDA,buy,USD,NVDA,stock,268.87,50,2.99,1.99,,"<p>Could have squeezed in a little more profit, but ATR was very high and I was not able to read the market.</p><p>Best that I was able to exit early with little profit because stock went down after 11am.</p>",LtOsGlB6
+2020-03-13T09:46:48-0400,"SPY Apr 17, 2020 185.00 PUT",buy,USD,SPY,stock_option,2.83,1,1,0.14,STRATEGY-1,,mCrudIpT
+2020-03-13T11:24:44-0400,"SPY Apr 17, 2020 185.00 PUT",sell,USD,SPY,stock_option,3.5,1,0,0.15,STRATEGY-1,,mCrudIpT
+2020-03-13T11:31:33-0400,"Z Mar 20, 2020 34.00 PUT",sell,USD,Z,stock_option,4.1,1,0,0.15,STRATEGY-1,,mx5XZzkR
+2020-03-13T10:07:59-0400,"Z Mar 20, 2020 34.00 PUT",buy,USD,Z,stock_option,3.2,1,1,0.14,STRATEGY-1,,mx5XZzkR
+2022-02-14T09:26:26-0500,CLK22,buy,USD,CL,future,92.37,1,2.37,0,,,NO7HppBt
+2022-02-14T09:37:53-0500,CLK22,sell,USD,CL,future,92.53,1,2.37,0,,,NO7HppBt
+2019-04-17T14:58:03-0400,"NFLX Apr 18, 2019 352.50 CALL",sell,USD,NFLX,stock_option,3.24,1,0.8025,0,,,nRMoGAcj
+2019-04-17T14:50:55-0400,"NFLX Apr 18, 2019 352.50 CALL",buy,USD,NFLX,stock_option,2.88,1,1.0938,0,,,nRMoGAcj
+2022-02-14T05:12:15-0500,NZDCHF,sell,CHF,NZDCHF,forex,0.66201876,500,0,0,,,OsLvCfYZ
+2022-02-11T05:32:29-0500,NZDCHF,buy,CHF,NZDCHF,forex,0.66554237,500,0,0,,,OsLvCfYZ
+2022-03-02T11:11:53-0500,SOFI,sell,USD,SOFI,stock,12.03,500,0,0,"CHOP,NO-RANGE",,OWuDy4uB
+2022-03-02T11:04:23-0500,SOFI,buy,USD,SOFI,stock,11.93,500,0,0,"CHOP,NO-RANGE",,OWuDy4uB
+2022-02-22T09:52:50-0500,ESM22,sell,USD,ES,future,4343.5,3,1.41,0,,,EdPRX9Zq
+2022-02-22T09:53:04-0500,ESM22,buy,USD,ES,future,4343.75,3,1.41,0,,,EdPRX9Zq
+2020-05-22T14:53:20-0400,"SPY May 22, 2020 295.50 PUT",buy,USD,SPY,stock_option,0.93,1,0.7238,0,,,Phs8AZHh
+2020-05-22T14:56:19-0400,"SPY May 22, 2020 295.50 PUT",sell,USD,SPY,stock_option,0.84,1,0.7277,0,,,Phs8AZHh
+2022-02-22T10:00:10-0500,ESM22,sell,USD,ES,future,4342.25,3,1.41,0,,,EdPRX9Zq
+2022-02-22T10:00:38-0500,ESM22,buy,USD,ES,future,4343.25,3,1.41,0,,,EdPRX9Zq
+2022-02-22T10:24:42-0500,ESM22,sell,USD,ES,future,4346.5,3,6.15,0,,,EdPRX9Zq
+2022-02-22T10:24:44-0500,ESM22,sell,USD,ES,future,4346.25,3,1.41,0,,,EdPRX9Zq
+2022-02-22T10:25:12-0500,ESM22,buy,USD,ES,future,4344.5,3,6.15,0,,,EdPRX9Zq
+2022-02-22T10:25:18-0500,ESM22,buy,USD,ES,future,4345.25,3,1.41,0,,,EdPRX9Zq
+2022-02-22T10:57:41-0500,ESM22,sell,USD,ES,future,4326.5,1,6.15,0,,,KdtTAwSw
+2022-02-22T11:23:55-0500,ESM22,buy,USD,ES,future,4316,1,6.15,0,,,KdtTAwSw
+2022-03-01T10:40:23-0500,ESM22,buy,USD,ES,future,4340.25,2,2.35,0,,,GLPLfag7
+2022-03-01T10:40:41-0500,ESM22,sell,USD,ES,future,4336,2,2.35,0,,,GLPLfag7
+2022-01-12T10:15:41-0500,PACB,sell,USD,PACB,stock,15.23,100,0,0,"CHOP,MKOPEN-TRD,NO-RANGE,STRATEGY-1",,pXKsuFNK
+2022-01-12T09:32:08-0500,PACB,sell,USD,PACB,stock,15.355,100,0,0,"CHOP,MKOPEN-TRD,NO-RANGE,STRATEGY-1",,pXKsuFNK
+2022-01-12T09:47:28-0500,PACB,buy,USD,PACB,stock,15.16,100,0,0,"CHOP,MKOPEN-TRD,NO-RANGE,STRATEGY-1",,pXKsuFNK
+2022-01-12T11:15:02-0500,PACB,buy,USD,PACB,stock,14.31,100,0,0,"CHOP,MKOPEN-TRD,NO-RANGE,STRATEGY-1",,pXKsuFNK
+2022-03-09T17:15:00-0500,GCM22,sell,USD,GC,future,1996,1,0,0,,,AQYURJds
+2022-03-09T18:45:32-0500,GCM22,buy,USD,GC,future,1994,1,0,0,,,AQYURJds
+2022-03-11T11:37:41-0500,ESM22,sell,USD,ES,future,4249.5,3,6.15,0,,,Jjyljusp
+2022-03-11T11:37:42-0500,ESM22,sell,USD,ES,future,4249.5,3,1.41,0,,,Jjyljusp
+2022-02-18T13:23:53-0500,DVN,buy,USD,DVN,stock,54.75,50,0,0,,,qaM9o77B
+2022-02-22T11:45:22-0500,DVN,sell,USD,DVN,stock,53.45,75,0,0,,,qaM9o77B
+2022-02-18T10:35:16-0500,DVN,buy,USD,DVN,stock,54.9,25,0,0,,,qaM9o77B
+2019-04-23T10:39:45-0400,SPLK,buy,USD,SPLK,stock,132.27,100,1,0,MKOPEN-TRD,,rMcA9oy6
+2019-04-24T09:56:16-0400,SPLK,sell,USD,SPLK,stock,134.22,100,1.2897,0,MKOPEN-TRD,,rMcA9oy6
+2020-03-17T09:35:20-0400,TQQQ,buy,USD,TQQQ,stock,39.01,10,0,0.01,"MKOPEN-TRD,STRATEGY-1",,rYyfIXzJ
+2020-03-17T12:25:33-0400,TQQQ,sell,USD,TQQQ,stock,43.22,10,0,0.02,"MKOPEN-TRD,STRATEGY-1",,rYyfIXzJ
+2022-03-04T11:39:21-0500,CGC,buy,USD,CGC,stock,6.33,2000,0,0,STRATEGY-1,,THUQvixw
+2022-03-04T13:08:22-0500,CGC,sell,USD,CGC,stock,6.36,1000,0,0,STRATEGY-1,,THUQvixw
+2022-03-04T12:33:22-0500,CGC,sell,USD,CGC,stock,6.31,1000,0,0,STRATEGY-1,,THUQvixw
+2021-03-29T10:21:06-0400,"CCL Apr 16, 2021 24.00 PUT",sell,USD,CCL,stock_option,0.82,2,1,0.04,STRATEGY-1,,tRSFgzYo
+2021-04-01T11:00:27-0400,"CCL Apr 16, 2021 24.00 PUT",buy,USD,CCL,stock_option,0.39,2,1,0.03,STRATEGY-1,,tRSFgzYo
+2020-05-22T13:52:31-0400,"SPY May 22, 2020 294.50 CALL",sell,USD,SPY,stock_option,0.6,20,13,0.14,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:53-0400,"SPY May 22, 2020 294.00 CALL",buy,USD,SPY,stock_option,1.01,10,6.5,0.06,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:21-0400,"SPY May 22, 2020 293.50 PUT",sell,USD,SPY,stock_option,0.33,10,6.5,0.065,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:42:37-0400,SPY,buy,USD,SPY,stock,294.59,100,0.325,0.005,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:21-0400,"SPY May 22, 2020 294.00 PUT",buy,USD,SPY,stock_option,0.47,10,6.5,0.065,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:54:59-0400,"SPY May 22, 2020 294.00 CALL",sell,USD,SPY,stock_option,0.87,10,6.5,0.07,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:43-0400,"SPY May 22, 2020 293.50 PUT",sell,USD,SPY,stock_option,0.32,20,8.667,0.083,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:42:05-0400,"SPY May 22, 2020 294.00 PUT",buy,USD,SPY,stock_option,0.43,10,6.5,0.06,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:51:44-0400,"SPY May 22, 2020 293.50 PUT",buy,USD,SPY,stock_option,0.32,29,18.85,0.17,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:43-0400,"SPY May 22, 2020 294.00 PUT",buy,USD,SPY,stock_option,0.45,10,8.667,0.083,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:21-0400,"SPY May 22, 2020 295.00 CALL",sell,USD,SPY,stock_option,0.44,10,6.5,0.065,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:42:37-0400,"SPY May 22, 2020 293.50 PUT",buy,USD,SPY,stock_option,0.32,1,0.325,0.005,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:42:05-0400,"SPY May 22, 2020 294.50 CALL",buy,USD,SPY,stock_option,0.72,10,6.5,0.06,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:43-0400,"SPY May 22, 2020 293.00 PUT",buy,USD,SPY,stock_option,0.23,10,8.667,0.083,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:21-0400,"SPY May 22, 2020 294.50 CALL",buy,USD,SPY,stock_option,0.68,10,6.5,0.065,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:53:19-0400,SPY,sell,USD,SPY,stock,294.43,100,0,0.5,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:53:08-0400,"SPY May 22, 2020 293.00 PUT",sell,USD,SPY,stock_option,0.22,10,6.5,0.07,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:52:44-0400,"SPY May 22, 2020 295.00 CALL",buy,USD,SPY,stock_option,0.37,10,6.5,0.06,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:52:13-0400,"SPY May 22, 2020 294.00 PUT",sell,USD,SPY,stock_option,0.47,40,26,0.27,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2020-05-22T13:41:53-0400,"SPY May 22, 2020 294.00 PUT",buy,USD,SPY,stock_option,0.46,10,6.5,0.06,"Iron Condor,STRATEGY-1",,TsUSEyPj
+2019-04-10T10:18:25-0400,"BABA Apr 12, 2019 190.00 CALL",sell,USD,BABA,stock_option,0.19,1,1.096,0,,,Tym8Fz5a
+2019-04-08T14:58:53-0400,"BABA Apr 12, 2019 190.00 CALL",buy,USD,BABA,stock_option,0.72,1,1.5638,0,,,Tym8Fz5a
+2019-04-23T09:49:21-0400,"KSS Apr 26, 2019 72.50 CALL",buy,USD,KSS,stock_option,1.45,1,1.0838,0,,,u8Ig2CsO
+2019-04-24T09:56:42-0400,"KSS Apr 26, 2019 72.50 CALL",sell,USD,KSS,stock_option,1.85,1,1.0996,0,,,u8Ig2CsO
+2021-04-23T11:00:04-0400,"AMD May 21, 2021 85.00 CALL",buy,USD,AMD,stock_option,3.15,5,2.5,0.07,STRATEGY-1,,UTVO2NRa
+2021-04-13T10:05:06-0400,"AMD May 21, 2021 85.00 CALL",sell,USD,AMD,stock_option,2.22,5,2.5,0.09,STRATEGY-1,,UTVO2NRa
+2022-03-11T11:40:21-0500,ESM22,buy,USD,ES,future,4248.5,3,1.41,0,,,Jjyljusp
+2022-03-11T11:40:22-0500,ESM22,buy,USD,ES,future,4248.5,3,6.15,0,,,Jjyljusp
+2021-10-08T11:22:33-0400,"GSPC Oct 13, 2021 4150.00 PUT",sell,USD,GSPC,index_option,1,1,1,1.18,Vertical Bull Put,,wN1I6Ect
+2021-10-06T12:59:24-0400,"GSPC Oct 13, 2021 4150.00 PUT",buy,USD,GSPC,index_option,3.8,1,0,0,Vertical Bull Put,,wN1I6Ect
+2021-10-08T11:22:33-0400,"GSPC Oct 13, 2021 4190.00 PUT",buy,USD,GSPC,index_option,1.45,1,0,0,Vertical Bull Put,,wN1I6Ect
+2021-10-06T12:59:24-0400,"GSPC Oct 13, 2021 4190.00 PUT",sell,USD,GSPC,index_option,6.2,1,1,1.18,Vertical Bull Put,,wN1I6Ect
+2020-05-12T10:32:07-0400,VEA,sell,USD,VEA,stock,35.96,10,0,0.02,SWING-TRADE,,XfAmQWZp
+2020-03-17T10:22:39-0400,VEA,buy,USD,VEA,stock,30.25,10,0,0.01,SWING-TRADE,,XfAmQWZp
+2021-04-01T09:42:16-0400,"PTON Apr 16, 2021 115.00 CALL",sell,USD,PTON,stock_option,7.6,2,2,0.07,,,xgFrqQyg
+2021-04-14T11:26:11-0400,"PTON Apr 16, 2021 115.00 CALL",buy,USD,PTON,stock_option,4.35,2,1,0.03,,,xgFrqQyg
+2021-03-30T15:38:37-0400,"PTON Apr 09, 2021 113.00 CALL",sell,USD,PTON,stock_option,1.94,2,1,0.04,,,xgFrqQyg
+2021-04-01T09:42:16-0400,"PTON Apr 09, 2021 113.00 CALL",buy,USD,PTON,stock_option,7.3,2,0,0,,,xgFrqQyg
+2021-12-18T14:22:00-0500,GM,buy,USD,GM,stock,54.3,200,0,0,STRATEGY-1,,YFynOjVw
+2021-12-29T10:33:32-0500,GM,sell,USD,GM,stock,58,200,0,0,STRATEGY-1,,YFynOjVw
+2020-03-19T11:05:35-0400,"SPY Apr 17, 2020 185.00 PUT",buy,USD,SPY,stock_option,5.35,1,1,0.14,,,yHyPSVs6
+2020-03-19T11:11:22-0400,"SPY Apr 17, 2020 185.00 PUT",sell,USD,SPY,stock_option,5.5,1,0,0.16,,,yHyPSVs6

@@ -1,0 +1,78 @@
+[2025-10-20 14:35:47] Prepared limit order: IESC BUY 20 379 GTC
+[2025-10-20 14:35:47] [DEBUG] Starting execTrade for IESC
+[2025-10-20 14:35:47] [DEBUG] Placing order...
+[2025-10-20 14:35:47] [DEBUG] placeOrder() returned Trade object Trade(contract=Stock(symbol='IESC', exchange='SMART', currency='USD'), order=LimitOrder(orderId=81, clientId=3, action='BUY', totalQuantity=20, lmtPrice=379, tif='GTC'), orderStatus=OrderStatus(orderId=81, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2025, 10, 20, 18, 35, 47, 980861, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+[2025-10-20 14:36:07] Prepared market order: FIX BUY 10
+[2025-10-20 14:36:07] Starting execTrade for FIX (BUY 10)
+[2025-10-20 14:36:07] Placed order MarketOrder(orderId=82, clientId=3, action='BUY', totalQuantity=10) → tradeId=?
+[2025-10-20 16:59:29] Prepared limit order: CLS BUY 25 264 GTC
+[2025-10-20 16:59:29] [DEBUG] Starting execTrade for CLS
+[2025-10-20 16:59:29] [DEBUG] Placing order...
+[2025-10-20 16:59:29] [DEBUG] placeOrder() returned Trade object Trade(contract=Stock(symbol='CLS', exchange='SMART', currency='USD'), order=LimitOrder(orderId=85, clientId=3, action='BUY', totalQuantity=25, lmtPrice=264, tif='GTC'), orderStatus=OrderStatus(orderId=85, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2025, 10, 20, 20, 59, 29, 254175, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+[2025-10-21 10:20:35] Prepared limit order: IESC BUY 20 379 GTC
+[2025-10-21 10:20:35] [DEBUG] Starting execTrade for IESC
+[2025-10-21 10:20:35] [DEBUG] Placing order...
+[2025-10-21 10:20:35] [DEBUG] placeOrder() returned Trade object Trade(contract=Stock(symbol='IESC', exchange='SMART', currency='USD'), order=LimitOrder(orderId=88, clientId=3, action='BUY', totalQuantity=20, lmtPrice=379, tif='GTC'), orderStatus=OrderStatus(orderId=88, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2025, 10, 21, 14, 20, 35, 596566, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+[2025-10-21 10:20:47] Prepared limit order: CLS BUY 25 264 GTC
+[2025-10-21 10:20:47] [DEBUG] Starting execTrade for CLS
+[2025-10-21 10:20:47] [DEBUG] Placing order...
+[2025-10-21 10:20:47] [DEBUG] placeOrder() returned Trade object Trade(contract=Stock(symbol='CLS', exchange='SMART', currency='USD'), order=LimitOrder(orderId=89, clientId=3, action='BUY', totalQuantity=25, lmtPrice=264, tif='GTC'), orderStatus=OrderStatus(orderId=89, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2025, 10, 21, 14, 20, 47, 925627, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+[2025-10-21 10:21:16] Prepared market order: AGX BUY 25
+[2025-10-21 10:21:16] Starting execTrade for AGX (BUY 25)
+[2025-10-21 10:21:16] Placed order MarketOrder(orderId=90, clientId=3, action='BUY', totalQuantity=25) → tradeId=?
+[2025-10-21 10:21:59] Prepared market order: UI BUY 15
+[2025-10-21 10:21:59] Starting execTrade for UI (BUY 15)
+[2025-10-21 10:21:59] Placed order MarketOrder(orderId=91, clientId=3, action='BUY', totalQuantity=15) → tradeId=?
+[2025-10-21 11:58:27] Prepared market order: KTOS BUY 60
+[2025-10-21 11:58:27] Starting execTrade for KTOS (BUY 60)
+[2025-10-21 11:58:27] Placed order MarketOrder(orderId=94, clientId=3, action='BUY', totalQuantity=60) → tradeId=?
+[2025-10-21 12:11:05] Prepared market order: DAVE BUY 30
+[2025-10-21 12:11:05] Starting execTrade for DAVE (BUY 30)
+[2025-10-21 12:11:05] Placed order MarketOrder(orderId=97, clientId=3, action='BUY', totalQuantity=30) → tradeId=?
+[2025-10-21 12:56:19] Prepared limit order: RMBS BUY 70 95.5 GTC
+[2025-10-21 12:56:19] [DEBUG] Starting execTrade for RMBS
+[2025-10-21 12:56:19] [DEBUG] Placing order...
+[2025-10-21 12:56:19] [DEBUG] placeOrder() returned Trade object Trade(contract=Stock(symbol='RMBS', exchange='SMART', currency='USD'), order=LimitOrder(orderId=100, clientId=3, action='BUY', totalQuantity=70, lmtPrice=95.5, tif='GTC'), orderStatus=OrderStatus(orderId=100, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2025, 10, 21, 16, 56, 19, 19482, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+[2025-10-21 12:56:58] Prepared market order: TOST BUY 250
+[2025-10-21 12:56:58] Starting execTrade for TOST (BUY 250)
+[2025-10-21 12:56:58] Placed order MarketOrder(orderId=101, clientId=3, action='BUY', totalQuantity=250) → tradeId=?
+[2025-10-21 13:08:41] Prepared market order: TMDX BUY 50
+[2025-10-21 13:08:41] Starting execTrade for TMDX (BUY 50)
+[2025-10-21 13:08:41] Placed order MarketOrder(orderId=104, clientId=3, action='BUY', totalQuantity=50) → tradeId=?
+[2025-10-21 13:19:58] Prepared market order: VRT BUY 35
+[2025-10-21 13:19:58] Starting execTrade for VRT (BUY 35)
+[2025-10-21 13:19:58] Placed order MarketOrder(orderId=107, clientId=3, action='BUY', totalQuantity=35) → tradeId=?
+[2025-10-21 14:00:12] Prepared market order: ARM BUY 35
+[2025-10-21 14:00:12] Starting execTrade for ARM (BUY 35)
+[2025-10-21 14:00:12] Placed order MarketOrder(orderId=110, clientId=3, action='BUY', totalQuantity=35) → tradeId=?
+[2025-10-21 14:11:41] Prepared market order: CAMT BUY 55
+[2025-10-21 14:11:41] Starting execTrade for CAMT (BUY 55)
+[2025-10-21 14:11:41] Placed order MarketOrder(orderId=113, clientId=3, action='BUY', totalQuantity=55) → tradeId=?
+[2025-10-21 14:37:02] Prepared market order: CRS BUY 30
+[2025-10-21 14:37:02] Starting execTrade for CRS (BUY 30)
+[2025-10-21 14:37:02] Placed order MarketOrder(orderId=116, clientId=3, action='BUY', totalQuantity=30) → tradeId=?
+[2025-10-21 14:49:47] Prepared market order: AMZN BUY 40
+[2025-10-21 14:49:47] Starting execTrade for AMZN (BUY 40)
+[2025-10-21 14:49:47] Placed order MarketOrder(orderId=119, clientId=3, action='BUY', totalQuantity=40) → tradeId=?
+[2025-10-21 15:01:54] Prepared market order: QCOM BUY 50
+[2025-10-21 15:01:54] Starting execTrade for QCOM (BUY 50)
+[2025-10-21 15:01:54] Placed order MarketOrder(orderId=122, clientId=3, action='BUY', totalQuantity=50) → tradeId=?
+[2025-10-21 15:32:14] Prepared market order: CRWD BUY 15
+[2025-10-21 15:32:14] Starting execTrade for CRWD (BUY 15)
+[2025-10-21 15:32:14] Placed order MarketOrder(orderId=125, clientId=3, action='BUY', totalQuantity=15) → tradeId=?
+[2025-10-21 15:32:22] Order preview - Direction: SELL, Quantity: 15, Trailing %: 3.1437570571106, Trailing $: None, Trail Stop Price: 488.94, Time: GTC, Currency: USD
+[2025-10-22 14:40:46] Prepared market order: KTOS SELL 60
+[2025-10-22 14:40:46] Starting execTrade for KTOS (SELL 60)
+[2025-10-22 14:40:46] Placed order MarketOrder(orderId=129, clientId=3, action='SELL', totalQuantity=60) → tradeId=?
+[2025-10-22 14:45:53] Order preview - Direction: SELL, Quantity: 25, Trailing %: 7.0, Trailing $: None, Trail Stop Price: 0.0, Time: GTC, Currency: USD
+[2025-10-22 16:25:46] Order preview - Direction: SELL, Quantity: 25, Trailing %: 7.0, Trailing $: None, Trail Stop Price: 0.0, Time: GTC, Currency: USD
+[2025-10-22 16:29:05] Order preview - Direction: SELL, Quantity: 25, Trailing %: 7.0, Trailing $: None, Trail Stop Price: 0.0, Time: GTC, Currency: USD
+[2025-10-22 16:32:30] Order preview - Direction: SELL, Quantity: 25, Trailing %: 7.0, Trailing $: None, Trail Stop Price: 0.0, Time: GTC, Currency: USD
+[2025-10-22 16:38:12] Order preview - Direction: SELL, Quantity: 25, Trailing %: 7.0, Trailing $: None, Trail Stop Price: 0.0, Time: GTC, Currency: USD
+[2025-10-22 16:38:12] CLS: Trailing % only (7.0%)
+[2025-10-22 16:38:12] CLS: TRAIL order submitted - Order(orderId=133, clientId=3, action='SELL', totalQuantity=25, orderType='TRAIL', tif='GTC', trailingPercent=7.0)
+[2025-10-22 16:39:42] Prepared stop loss order: TOST SELL 250 4.0 GTC
+[2025-10-22 16:46:21] Notice: Both trailing_percent (7.0%) and trail_stop_price ($4.0) provided — submitting combined trailing stop.
+[2025-10-22 16:46:21] Order preview - Direction: SELL, Quantity: 250, Trailing %: 7.0, Trailing $: None, Trail Stop Price: 4.0, Time: GTC, Currency: USD
+[2025-10-22 16:46:21] TOST: Combined Trail Stop $4.0 + 7.0% trailing
+[2025-10-22 16:46:21] TOST: TRAIL order submitted - Order(orderId=135, clientId=3, action='SELL', totalQuantity=250, orderType='TRAIL', tif='GTC', trailStopPrice=4.0, trailingPercent=7.0)
