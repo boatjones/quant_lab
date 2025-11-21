@@ -10,3 +10,19 @@ To house the Python and Jupyter notebooks for quant/systematic investing and tra
 8) Monte Carlo simulator
 9) Strategy backtesting
 10) Streamlit frontend
+
+System Goals and Directions:
+1	Tiingo initial load pipeline for prices
+2	Tiingo maintenance load pipeline for prices
+3	FMP initial load pipeline for fundamentals
+4	FMP maintenance load for fundamentals
+5	Take existing relative strength study and adapt to local database of prices with fundamental filtering
+6	Take existing relative rotation graph study and adapt to local database
+7	Strategy exploration
+8	Strategy backtesting
+9	Strategy implementation in Interactive Brokers for paper trading
+10	Loop steps 7-9 to add and vet strategies
+11	Deployment of winning strategies in real portfolio with money
+12	Build in additional asset types
+13	Incorporate AI/ML models where appropriate
+

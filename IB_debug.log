@@ -76,3 +76,14 @@
 [2025-10-22 16:46:21] Order preview - Direction: SELL, Quantity: 250, Trailing %: 7.0, Trailing $: None, Trail Stop Price: 4.0, Time: GTC, Currency: USD
 [2025-10-22 16:46:21] TOST: Combined Trail Stop $4.0 + 7.0% trailing
 [2025-10-22 16:46:21] TOST: TRAIL order submitted - Order(orderId=135, clientId=3, action='SELL', totalQuantity=250, orderType='TRAIL', tif='GTC', trailStopPrice=4.0, trailingPercent=7.0)
+[2025-10-31 12:05:02] Prepared limit order: IREN BUY 350 60.5 GTC
+[2025-10-31 12:05:02] [DEBUG] Starting execTrade for IREN
+[2025-10-31 12:05:02] [DEBUG] Placing order...
+[2025-10-31 12:05:02] [DEBUG] placeOrder() returned Trade object Trade(contract=Stock(symbol='IREN', exchange='SMART', currency='USD'), order=LimitOrder(orderId=138, clientId=3, action='BUY', totalQuantity=350, lmtPrice=60.5, tif='GTC'), orderStatus=OrderStatus(orderId=138, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2025, 10, 31, 16, 5, 2, 237890, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+[2025-10-31 12:05:06] Prepared limit order: BE BUY 25 120 GTC
+[2025-10-31 12:05:06] [DEBUG] Starting execTrade for BE
+[2025-10-31 12:05:06] [DEBUG] Placing order...
+[2025-10-31 12:05:06] [DEBUG] placeOrder() returned Trade object Trade(contract=Stock(symbol='BE', exchange='SMART', currency='USD'), order=LimitOrder(orderId=139, clientId=3, action='BUY', totalQuantity=25, lmtPrice=120, tif='GTC'), orderStatus=OrderStatus(orderId=139, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2025, 10, 31, 16, 5, 6, 419518, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+[2025-10-31 12:05:09] Prepared market order: CRDO BUY 50
+[2025-10-31 12:05:09] Starting execTrade for CRDO (BUY 50)
+[2025-10-31 12:05:09] Placed order MarketOrder(orderId=140, clientId=3, action='BUY', totalQuantity=50) → tradeId=?

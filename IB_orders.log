@@ -23,3 +23,6 @@
 [2025-10-22 16:38:12] ClientID=3 | SELL 25 CLS Type=trailStopEqOrder @ 0.0 | Trail%=7.0 TrailStop=0.0
 [2025-10-22 16:39:42] ClientID=3 | SELL 250 TOST Type=stopEqOrder @ 4.0 | Trail%=None TrailStop=None
 [2025-10-22 16:46:21] ClientID=3 | SELL 250 TOST Type=trailStopEqOrder @ 4.0 | Trail%=7.0 TrailStop=4.0
+[2025-10-31 12:05:02] ClientID=3 | BUY 350 IREN Type=limitEqOrder @ 60.5 | Trail%=None TrailStop=None
+[2025-10-31 12:05:06] ClientID=3 | BUY 25 BE Type=limitEqOrder @ 120 | Trail%=None TrailStop=None
+[2025-10-31 12:05:09] ClientID=3 | BUY 50 CRDO Type=marketEqOrder | Trail%=None TrailStop=None

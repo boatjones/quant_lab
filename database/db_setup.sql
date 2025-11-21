@@ -9,36 +9,45 @@ create table symbols (
   is_etf  smallint,
   start_date  date,
   end_date   date,
-  is_active  smallint);
+  is_active  smallint,
+  date_loaded date,
+  PRIMARY KEY (ticker)
+);
   
 CREATE TABLE quant01.public.stocks (
-	ticker varchar(20) NOT NULL,
-	company_name varchar(80) NOT NULL,
-	industry varchar(50),
-	sector varchar(50),
-	exchange varchar(10),
+	ticker text NOT NULL,
+	company_name text NOT NULL,
+	industry text,
+	sector text,
+	exchange text,
 	PRIMARY KEY (ticker)
 );
   
 CREATE TABLE ohlcv (
     ticker TEXT REFERENCES symbols(ticker),
-    date DATE NOT NULL,
-    open NUMERIC,
-    high NUMERIC,
-    low NUMERIC,
-    close NUMERIC,
-    adj_close NUMERIC,
+    trade_date DATE NOT NULL,
+    price_open NUMERIC,
+    price_high NUMERIC,
+    price_low NUMERIC,
+    price_close NUMERIC,
+    close_unadj NUMERIC,
     volume BIGINT,
     dividend NUMERIC,   -- Optional but useful
     split NUMERIC,      -- Optional but very useful
-    PRIMARY KEY (ticker, date)
+    PRIMARY KEY (ticker, trade_date)
 );
-CREATE INDEX ON ohlcv(ticker, date);
-SELECT create_hypertable('ohlcv', 'date');
+CREATE INDEX ON ohlcv(ticker, trade_date);
+SELECT create_hypertable('ohlcv', 'trade_date');
+
+-- Add to db_setup.sql
+CREATE TABLE ohlcv_staging (
+    LIKE ohlcv INCLUDING ALL
+);
 
 CREATE or REPLACE TABLE fundamentals (
     ticker TEXT REFERENCES symbols(ticker),
     period_end_date DATE,
+    filing_date  DATE,
     report_type char(1),  -- 'Q' or 'A'
     revenue NUMERIC,
     ebit NUMERIC,
@@ -47,7 +56,8 @@ CREATE or REPLACE TABLE fundamentals (
     total_liabilities NUMERIC,
     equity NUMERIC,
     retained_earnings NUMERIC,
-    working_capital NUMERIC,
+    current_assets NUMERIC,
+    current_liabilities NUMERIC,
     total_debt NUMERIC,
     cash_and_equiv NUMERIC,
     cfo NUMERIC,
@@ -95,6 +105,7 @@ SELECT
     -- 🧮 Derived Values
     e.market_cap,
     e.enterprise_value,
+    f.current_assets - f.current_liabilities           AS working_capital,
 
     -- 📊 Profitability Ratios
     f.net_income / NULLIF(f.equity, 0)                 AS roe,
