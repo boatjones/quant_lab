@@ -15,7 +15,7 @@ project_root = Path(__file__).parents[1]
 sys.path.insert(0, str(project_root))
 
 # must come after path is set
-from to_postgres import PgHook
+from util.to_postgres import PgHook
 
 
 # Set up logging
@@ -64,9 +64,21 @@ class TiingoDataManager:
         Helper method: Return True only for common stock tickers.
         If asset_type is provided and is 'etf', always return True (don't filter ETFs)
         """
+        ticker_upper = ticker.upper()
+
+        # Even for ETFs/indices, reject obvious junk patterns
+        # (Tiingo sometimes mislabels preferred shares, warrants as ETFs)
+        obvious_junk_suffixes = ['-P', '-W', '-U', '-R', '-WT', '-UN']
+        if any(ticker_upper.endswith(suffix) for suffix in obvious_junk_suffixes):
+            return False
+        
         # Don't filter ETFs or indices - they have clean tickers
         if asset_type and asset_type.lower() in ['etf', 'index', 'fund']:
             return True
+        
+        # Exclude mutual funds entirely
+        if asset_type and asset_type.lower() == 'mutual fund':
+            return False
         
         # Explicit list of known junk tickers (4-char units/rights/warrants)
         known_junk = {
@@ -75,7 +87,7 @@ class TiingoDataManager:
             'FTWU', 'FMGU', 'ETAU', 'DGCU', 'BNNR', 'BMYR'
         }
     
-        if ticker.upper() in known_junk:
+        if ticker_upper in known_junk:
             return False
         
         exclude_patterns = [
@@ -83,8 +95,6 @@ class TiingoDataManager:
             '-P-', '.P',  # Preferred shares (but not at start like "P" ticker)
             '-CL',  # Special classes
         ]
-        
-        ticker_upper = ticker.upper()
         
         # Exclude if ticker matches exclude patterns
         for pattern in exclude_patterns:
@@ -103,7 +113,7 @@ class TiingoDataManager:
         if ticker_upper.endswith(('-A', '-B','-C','-D','-E','-F','-G','-H','-I','J',
                                   '-K','-L','-M','-N','-O','-P','-Q','-R','-S','-T',
                                   '-U','-V','-W','-X','-Y','-Z')):
-            return False
+            return False       
         
         # Exclude purely numeric tickers (often CUSIP-style junk)
         if ticker.replace('-', '').replace('.', '').isdigit():
@@ -126,7 +136,9 @@ class TiingoDataManager:
         us_tickers = []
         for ticker in tickers_meta:
             if ticker['exchange'] not in us_exchanges:
-                continue
+                # But still include if it's an index
+                if asset_type != 'index':
+                    continue
 
             asset_type = ticker.get('assetType')
             if asset_type:
@@ -442,9 +454,12 @@ class TiingoDataManager:
 
         return failed_tickers
 
-    def download_price_data(self, ticker_list, start_date='2015-01-01', batch_size=100) -> List:
+    def download_price_data(self, ticker_list, start_date='2015-01-01', end_date= None, batch_size=100) -> List:
         """Download price data in batches"""
         logger.info(f"Starting price data download for {len(ticker_list)}")
+
+        if end_date is None:
+            end_date = (pd.Timestamp.now() - pd.Timedelta(days=1)).strftime('%Y-%m-%d')
 
         # clear staging table
         self.db.execute_sql('TRUNCATE ohlcv_staging')
@@ -467,6 +482,7 @@ class TiingoDataManager:
                     df = self.client.get_dataframe(
                         ticker,
                         startDate=start_date,
+                        endDate=end_date,
                         frequency='daily'
                     )
 

@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+"""
+Tiingo Pipeline For Initial Load
+First load of database for symbols, stocks, and price data
+Ten years for all US based tickers.
+
+Usage:
+    python tiingo_initial_load_pipeline.py
+"""
 import sys
 import pandas as pd
 from pathlib import Path
@@ -70,8 +79,9 @@ stocks_df = proto_stock_df.merge(
     how='left'
 )
 
-# I need help getting this into Pandas
-"""select s.ticker, s.company_name, y.industry, y.sector, s.exchange
+# Above in SQL
+"""
+select s.ticker, s.company_name, y.industry, y.sector, s.exchange
 from stocks_df s
 left join yf_enriched_df y
 on s.ticker = y.ticker

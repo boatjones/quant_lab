@@ -13,6 +13,12 @@ create table symbols (
   date_loaded date,
   PRIMARY KEY (ticker)
 );
+
+CREATE TABLE excluded_tickers (
+    ticker text PRIMARY KEY,
+    reason text,
+    date_excluded DATE DEFAULT CURRENT_DATE
+);
   
 CREATE TABLE quant01.public.stocks (
 	ticker text NOT NULL,
@@ -42,6 +48,12 @@ SELECT create_hypertable('ohlcv', 'trade_date');
 -- Add to db_setup.sql
 CREATE TABLE ohlcv_staging (
     LIKE ohlcv INCLUDING ALL
+);
+
+CREATE TABLE index_mapping (
+   index_ticker  TEXT,
+   etf_ticker    TEXT,
+   PRIMARY KEY (index_ticker, etf_ticker)
 );
 
 CREATE or REPLACE TABLE fundamentals (
