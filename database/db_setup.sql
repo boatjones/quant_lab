@@ -56,11 +56,11 @@ CREATE TABLE index_mapping (
    PRIMARY KEY (index_ticker, etf_ticker)
 );
 
-CREATE or REPLACE TABLE fundamentals (
+CREATE TABLE fundamentals (
     ticker TEXT REFERENCES symbols(ticker),
     period_end_date DATE,
     filing_date  DATE,
-    report_type char(1),  -- 'Q' or 'A'
+    report_type varchar(2),  -- 'Q1','Q2','Q3','Q4' or 'FY'
     revenue NUMERIC,
     ebit NUMERIC,
     net_income NUMERIC,
@@ -81,19 +81,19 @@ CREATE or REPLACE TABLE fundamentals (
 );
 CREATE INDEX ON fundamentals(ticker, period_end_date, report_type);
 
-CREATE OR REPLACE VIEW fundamental_ratios AS
+CREATE VIEW fundamental_ratios AS
 WITH price_on_report_date AS (
-    SELECT o.ticker, o.date AS price_date, o.adj_close
+    SELECT o.ticker, o.trade_date AS price_date, o.price_close
     FROM ohlcv o
     JOIN (
         SELECT DISTINCT ticker, period_end_date
         FROM fundamentals
     ) f ON o.ticker = f.ticker
-       AND o.date = (
-           SELECT MIN(date)
+       AND o.trade_date = (
+           SELECT MIN(trade_date)
            FROM ohlcv o2
            WHERE o2.ticker = f.ticker
-             AND o2.date >= f.period_end_date
+             AND o2.trade_date >= f.period_end_date
        )
 ),
 enterprise_value_calc AS (
@@ -101,8 +101,8 @@ enterprise_value_calc AS (
         f.ticker,
         f.period_end_date,
         f.report_type,
-        p.adj_close * f.shares_outstanding AS market_cap,
-        (p.adj_close * f.shares_outstanding) + f.total_debt - f.cash_and_equiv AS enterprise_value
+        p.price_close * f.shares_outstanding AS market_cap,
+        (p.price_close * f.shares_outstanding) + f.total_debt - f.cash_and_equiv AS enterprise_value
     FROM fundamentals f
     JOIN price_on_report_date p
         ON f.ticker = p.ticker AND f.period_end_date = p.price_date
@@ -152,7 +152,7 @@ FROM fundamentals f
 JOIN enterprise_value_calc e
   ON f.ticker = e.ticker AND f.period_end_date = e.period_end_date AND f.report_type = e.report_type;
 
-CREATE OR REPLACE VIEW fundamental_per_share AS
+CREATE VIEW fundamental_per_share AS
 SELECT
     f.ticker,
     f.period_end_date,

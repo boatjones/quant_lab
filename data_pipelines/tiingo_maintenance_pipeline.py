@@ -98,7 +98,7 @@ all_symbols_df = db.psy_query('select ticker, company_name from all_symbols;')
 new_tickers_df = tdm.merge_names(new_tickers_df, all_symbols_df)
 
 # Only enrich tickers that STILL have no name
-needs_enrichment = new_tickers_df[new_tickers_df['company_name'].isna()]['ticker'].tolist()
+needs_enrichment = new_tickers_df[new_tickers_df['company_name'].isna()]['ticker'].to_list()
 print(f"Tickers needing API enrichment: {len(needs_enrichment)}")
 
 # Get company names for new tickers
@@ -134,7 +134,7 @@ junk_tickers = new_tickers_df[
     new_tickers_df['company_name'].isna() | 
     (new_tickers_df['company_name'] == '') |
     (new_tickers_df['company_name'].str.lower() == 'null')
-]['ticker'].tolist()
+]['ticker'].to_list()
 
 if junk_tickers:
     for ticker in junk_tickers:
@@ -165,34 +165,52 @@ if len(addl_stocks_df) == 0:
     logger.info("No new stocks to add")
 else:
     # Get industry & sector from yFinance for new stock records
-    yf_enriched_df = tdm.yfinance_metadata(addl_stocks_df['ticker'].tolist())
+    yf_enriched_df = tdm.yfinance_metadata(addl_stocks_df['ticker'].to_list())
 
-    # merge yFinance data into addl_stocks_df
-    addl_stocks_df = addl_stocks_df.merge(
-        yf_enriched_df[['ticker', 'industry', 'sector']],
-        on='ticker',
-        how='left'
-    )
+    # DEBUG: See what's returned from yFinance
+    print(f"yFinance returned {len(yf_enriched_df)} rows")
+    print(f"yFinance columns: {yf_enriched_df.columns.to_list()}")
+
+    if len(yf_enriched_df) > 0 and 'industry' in yf_enriched_df.columns:
+        # merge yFinance data into addl_stocks_df
+        addl_stocks_df = addl_stocks_df.merge(
+            yf_enriched_df[['ticker', 'industry', 'sector']],
+            on='ticker',
+            how='left'
+        )
+    else:
+        logger.warning("yFinance returns no usable data")
+        addl_stocks_df['industry'] = None
+        addl_stocks_df['sector'] = None
 
     # Get industry & sector from FMP for any remaining null or empty records
     missing_mask = addl_stocks_df['industry'].isna() | (addl_stocks_df['industry'] == '')
-    tickers_needing_fmp = addl_stocks_df.loc[missing_mask, 'ticker'].tolist()
+    tickers_needing_fmp = addl_stocks_df.loc[missing_mask, 'ticker'].to_list()
 
     if tickers_needing_fmp:
         logger.info(f"Fetching FMP data for {len(tickers_needing_fmp)} tickers missing industry & sector")
         fmp_enriched_df = tdm.fetch_industry_sector(tickers_needing_fmp)
 
-        addl_stocks_df = addl_stocks_df.merge(
-            fmp_enriched_df[['ticker', 'industry', 'sector']],
-            on='ticker',
-            how='left',
-            suffixes=('', '_fmp')
-        )
+        # DEBUG: See what's returned from FMP
+        print(f"FMP returned {len(fmp_enriched_df)} rows")
+        print(f"FMP columns: {fmp_enriched_df.columns.to_list()}")
 
-        addl_stocks_df['industry'] = addl_stocks_df['industry'].fillna(addl_stocks_df['industry_fmp'])
-        addl_stocks_df['sector'] = addl_stocks_df['sector'].fillna(addl_stocks_df['sector_fmp'])
+        # Only merge if we got data back
+        if len(fmp_enriched_df) > 0:
+            addl_stocks_df = addl_stocks_df.merge(
+                fmp_enriched_df[['ticker', 'industry', 'sector']],
+                on='ticker',
+                how='left',
+                suffixes=('', '_fmp')
+            )
 
-        addl_stocks_df = addl_stocks_df.drop(columns=['industry_fmp', 'sector_fmp'], errors='ignore')
+            addl_stocks_df['industry'] = addl_stocks_df['industry'].fillna(addl_stocks_df['industry_fmp'])
+            addl_stocks_df['sector'] = addl_stocks_df['sector'].fillna(addl_stocks_df['sector_fmp'])
+
+            addl_stocks_df = addl_stocks_df.drop(columns=['industry_fmp', 'sector_fmp'], errors='ignore')
+
+        else:
+            logger.warning("FMP returned no data for any tickers")
 
     # Set field order
     stocks_df = addl_stocks_df[['ticker', 'company_name', 'industry', 'sector', 'exchange']]
@@ -201,7 +219,7 @@ else:
     junk_stocks = stocks_df[
         stocks_df['industry'].isna() | 
         (stocks_df['industry'] == '')
-    ]['ticker'].tolist()
+    ]['ticker'].to_list()
 
     if junk_stocks:
         for ticker in junk_stocks:
@@ -211,7 +229,14 @@ else:
                 ON CONFLICT (ticker) DO NOTHING
             """
             db.execute_sql(sql, (ticker, 'no_industry_data'))
-        logger.info(f"Added {len(junk_stocks)} to excluded_tickers")
+
+        # Delete from symbols table as well
+        delete_sql = """
+            DELETE FROM symbols
+            WHERE ticker in (SELECT ticker from excluded_tickers)
+        """
+        db.execute_sql(delete_sql)
+        logger.info(f"Added {len(junk_stocks)} to excluded_tickers and removed from symbols")
 
     # After all enrichment attempts...
     clean_stocks_df = stocks_df[
@@ -232,7 +257,7 @@ symbols_df = db.psy_query("select ticker, company_name, asset_type from symbols 
 
 # Get pricing data
 print("Downloading price data...")
-ticker_list = symbols_df['ticker'].tolist() 
+ticker_list = symbols_df['ticker'].to_list() 
 failed_prices = tdm.download_price_data(ticker_list, max_trade_date)
 
 # Validate and move price data to ohlcv table

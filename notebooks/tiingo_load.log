@@ -10890,3 +10890,546 @@
 2025-11-26 15:27:54,748 - INFO - Successfully moved staging to production
 2025-11-26 15:28:05,171 - INFO - Found 0 stale tickers (no prices in 30 days)
 2025-11-26 15:28:05,172 - INFO - No stale tickers to mark inactive
+2025-12-01 12:34:27,604 - INFO - Initialize TiingoDataManager with rate limiting
+2025-12-01 12:34:32,612 - INFO - Fetching all tickers from Tiingo...
+2025-12-01 12:34:33,139 - INFO - Filtered out 4746 junk tickers (warrants, units, preferreds)
+2025-12-01 12:57:47,620 - INFO - No updates on 'is_active' to symbols.
+2025-12-01 12:58:03,455 - INFO - Enriched 0 company names from all_symbols table
+2025-12-01 12:58:03,456 - INFO - Remaining nulls: 4
+2025-12-01 12:58:18,441 - INFO - Null company names: 0, Empty company names: 0
+2025-12-01 12:58:37,846 - INFO - Enriched 4 company names from all_symbols table
+2025-12-01 12:58:37,847 - INFO - Remaining nulls: 0
+2025-12-01 12:58:44,315 - INFO - Corrected 1 ETFs mislabeled as stocks
+2025-12-01 12:59:44,048 - INFO - Upserting 4 symbols...
+2025-12-01 12:59:44,102 - INFO - Processed 4/4 symbols
+2025-12-01 12:59:44,102 - INFO - Successfully upserted 4 symbols, 0 failed
+2025-12-01 12:59:44,103 - INFO - Failed symbols inserted: 0
+2025-12-01 13:00:24,844 - INFO - Fetching metadata from yFinance...
+2025-12-01 13:00:29,793 - INFO - Found 9 tickers from yFinance.
+2025-12-01 13:00:29,806 - INFO - Fetching FMP data for 7 tickers missing industry & sector
+2025-12-01 13:00:29,807 - INFO - Fetching industry/sector data for 7 tickers...
+2025-12-01 13:00:41,872 - INFO - Retrieved data for 0 tickers, 0 failed
+2025-12-01 13:30:35,029 - INFO - Fetching metadata from yFinance...
+2025-12-01 13:30:37,092 - INFO - Found 9 tickers from yFinance.
+2025-12-01 13:42:17,316 - INFO - Fetching metadata from yFinance...
+2025-12-01 13:42:19,367 - INFO - Found 9 tickers from yFinance.
+2025-12-01 13:42:19,371 - INFO - Fetching FMP data for 7 tickers missing industry & sector
+2025-12-01 13:42:19,371 - INFO - Fetching industry/sector data for 7 tickers...
+2025-12-01 13:42:31,446 - INFO - Retrieved data for 0 tickers, 0 failed
+2025-12-01 13:42:31,447 - WARNING - FMP returned no data for any tickers
+2025-12-01 13:42:31,539 - INFO - Added 7 to excluded_tickers
+2025-12-01 13:42:31,540 - INFO - Upserting 2 stocks...
+2025-12-01 13:42:31,562 - INFO - Processed 2/2 symbols
+2025-12-01 13:42:31,562 - INFO - Successfully upserted 2 symbols, 0 failed
+2025-12-01 14:06:25,466 - INFO - Starting price data download for 10159
+2025-12-01 14:06:25,492 - INFO - Processing batch 1.0/102
+2025-12-01 14:08:24,387 - INFO - Inserted 199 rows to staging
+2025-12-01 14:08:24,387 - INFO - Processing batch 2.0/102
+2025-12-01 14:10:24,405 - INFO - Inserted 200 rows to staging
+2025-12-01 14:10:24,406 - INFO - Processing batch 3.0/102
+2025-12-01 14:12:24,419 - INFO - Inserted 200 rows to staging
+2025-12-01 14:12:24,420 - INFO - Processing batch 4.0/102
+2025-12-01 14:13:29,191 - ERROR - Failed to download LSB: "None of ['date'] are in the columns"
+2025-12-01 14:13:57,995 - ERROR - Failed to download AMBC: "None of ['date'] are in the columns"
+2025-12-01 14:14:17,246 - ERROR - Failed to download NFINU: "None of ['date'] are in the columns"
+2025-12-01 14:14:24,441 - INFO - Inserted 194 rows to staging
+2025-12-01 14:14:24,442 - INFO - Processing batch 5.0/102
+2025-12-01 14:14:57,063 - ERROR - Failed to download NFINW: "None of ['date'] are in the columns"
+2025-12-01 14:16:24,449 - INFO - Inserted 198 rows to staging
+2025-12-01 14:16:24,450 - INFO - Processing batch 6.0/102
+2025-12-01 14:18:24,453 - INFO - Inserted 200 rows to staging
+2025-12-01 14:18:24,454 - INFO - Processing batch 7.0/102
+2025-12-01 14:20:24,547 - INFO - Inserted 200 rows to staging
+2025-12-01 14:20:24,548 - INFO - Processing batch 8.0/102
+2025-12-01 14:21:13,634 - ERROR - Failed to download ATUS: "None of ['date'] are in the columns"
+2025-12-01 14:22:24,460 - INFO - Inserted 198 rows to staging
+2025-12-01 14:22:24,461 - INFO - Processing batch 9.0/102
+2025-12-01 14:24:24,480 - INFO - Inserted 200 rows to staging
+2025-12-01 14:24:24,481 - INFO - Processing batch 10.0/102
+2025-12-01 14:26:24,488 - INFO - Inserted 200 rows to staging
+2025-12-01 14:26:24,488 - INFO - Processing batch 11.0/102
+2025-12-01 14:28:24,497 - INFO - Inserted 200 rows to staging
+2025-12-01 14:28:24,498 - INFO - Processing batch 12.0/102
+2025-12-01 14:30:24,489 - INFO - Inserted 200 rows to staging
+2025-12-01 14:30:24,490 - INFO - Processing batch 13.0/102
+2025-12-01 14:32:24,511 - INFO - Inserted 200 rows to staging
+2025-12-01 14:32:24,512 - INFO - Processing batch 14.0/102
+2025-12-01 14:34:24,520 - INFO - Inserted 200 rows to staging
+2025-12-01 14:34:24,520 - INFO - Processing batch 15.0/102
+2025-12-01 14:36:24,541 - INFO - Inserted 200 rows to staging
+2025-12-01 14:36:24,542 - INFO - Processing batch 16.0/102
+2025-12-01 14:38:24,527 - INFO - Inserted 200 rows to staging
+2025-12-01 14:38:24,528 - INFO - Processing batch 17.0/102
+2025-12-01 14:40:24,572 - INFO - Inserted 200 rows to staging
+2025-12-01 14:40:24,573 - INFO - Processing batch 18.0/102
+2025-12-01 14:42:24,570 - INFO - Inserted 199 rows to staging
+2025-12-01 14:42:24,571 - INFO - Processing batch 19.0/102
+2025-12-01 14:44:24,699 - INFO - Inserted 200 rows to staging
+2025-12-01 14:44:24,700 - INFO - Processing batch 20.0/102
+2025-12-01 14:46:24,595 - INFO - Inserted 200 rows to staging
+2025-12-01 14:46:24,595 - INFO - Processing batch 21.0/102
+2025-12-01 14:48:24,602 - INFO - Inserted 200 rows to staging
+2025-12-01 14:48:24,603 - INFO - Processing batch 22.0/102
+2025-12-01 14:50:24,595 - INFO - Inserted 200 rows to staging
+2025-12-01 14:50:24,595 - INFO - Processing batch 23.0/102
+2025-12-01 14:52:24,615 - INFO - Inserted 200 rows to staging
+2025-12-01 14:52:24,615 - INFO - Processing batch 24.0/102
+2025-12-01 14:54:24,612 - INFO - Inserted 200 rows to staging
+2025-12-01 14:54:24,613 - INFO - Processing batch 25.0/102
+2025-12-01 14:56:24,630 - INFO - Inserted 200 rows to staging
+2025-12-01 14:56:24,631 - INFO - Processing batch 26.0/102
+2025-12-01 14:58:24,629 - INFO - Inserted 200 rows to staging
+2025-12-01 14:58:24,630 - INFO - Processing batch 27.0/102
+2025-12-01 15:00:24,758 - INFO - Inserted 200 rows to staging
+2025-12-01 15:00:24,759 - INFO - Processing batch 28.0/102
+2025-12-01 15:02:24,667 - INFO - Inserted 200 rows to staging
+2025-12-01 15:02:24,668 - INFO - Processing batch 29.0/102
+2025-12-01 15:04:24,664 - INFO - Inserted 200 rows to staging
+2025-12-01 15:04:24,665 - INFO - Processing batch 30.0/102
+2025-12-01 15:06:24,658 - INFO - Inserted 200 rows to staging
+2025-12-01 15:06:24,659 - INFO - Processing batch 31.0/102
+2025-12-01 15:08:24,673 - INFO - Inserted 200 rows to staging
+2025-12-01 15:08:24,674 - INFO - Processing batch 32.0/102
+2025-12-01 15:09:57,074 - ERROR - Failed to download FDHT: "None of ['date'] are in the columns"
+2025-12-01 15:10:24,723 - INFO - Inserted 198 rows to staging
+2025-12-01 15:10:24,724 - INFO - Processing batch 33.0/102
+2025-12-01 15:10:28,265 - ERROR - Failed to download FDWM: "None of ['date'] are in the columns"
+2025-12-01 15:12:24,694 - INFO - Inserted 198 rows to staging
+2025-12-01 15:12:24,695 - INFO - Processing batch 34.0/102
+2025-12-01 15:14:24,707 - INFO - Inserted 200 rows to staging
+2025-12-01 15:14:24,708 - INFO - Processing batch 35.0/102
+2025-12-01 15:16:24,697 - INFO - Inserted 200 rows to staging
+2025-12-01 15:16:24,698 - INFO - Processing batch 36.0/102
+2025-12-01 15:16:25,907 - ERROR - Failed to download FOSLL: "None of ['date'] are in the columns"
+2025-12-01 15:17:28,285 - ERROR - Failed to download FSBD: "None of ['date'] are in the columns"
+2025-12-01 15:17:43,879 - ERROR - Failed to download FSLD: "None of ['date'] are in the columns"
+2025-12-01 15:18:24,724 - INFO - Inserted 194 rows to staging
+2025-12-01 15:18:24,725 - INFO - Processing batch 37.0/102
+2025-12-01 15:20:24,724 - INFO - Inserted 200 rows to staging
+2025-12-01 15:20:24,724 - INFO - Processing batch 38.0/102
+2025-12-01 15:20:27,125 - ERROR - Failed to download FSST: "None of ['date'] are in the columns"
+2025-12-01 15:22:24,756 - INFO - Inserted 198 rows to staging
+2025-12-01 15:22:24,757 - INFO - Processing batch 39.0/102
+2025-12-01 15:24:24,725 - INFO - Inserted 200 rows to staging
+2025-12-01 15:24:24,726 - INFO - Processing batch 40.0/102
+2025-12-01 15:24:50,065 - ERROR - Failed to download GNFT: "None of ['date'] are in the columns"
+2025-12-01 15:26:24,730 - INFO - Inserted 198 rows to staging
+2025-12-01 15:26:24,731 - INFO - Processing batch 41.0/102
+2025-12-01 15:28:24,865 - INFO - Inserted 200 rows to staging
+2025-12-01 15:28:24,866 - INFO - Processing batch 42.0/102
+2025-12-01 15:30:24,770 - INFO - Inserted 200 rows to staging
+2025-12-01 15:30:24,771 - INFO - Processing batch 43.0/102
+2025-12-01 15:31:49,975 - ERROR - Failed to download HONE: "None of ['date'] are in the columns"
+2025-12-01 15:32:24,774 - INFO - Inserted 198 rows to staging
+2025-12-01 15:32:24,774 - INFO - Processing batch 44.0/102
+2025-12-01 15:34:24,777 - INFO - Inserted 200 rows to staging
+2025-12-01 15:34:24,778 - INFO - Processing batch 45.0/102
+2025-12-01 15:36:24,778 - INFO - Inserted 200 rows to staging
+2025-12-01 15:36:24,779 - INFO - Processing batch 46.0/102
+2025-12-01 15:38:24,776 - INFO - Inserted 200 rows to staging
+2025-12-01 15:38:24,777 - INFO - Processing batch 47.0/102
+2025-12-01 15:39:53,787 - ERROR - Failed to download INFA: "None of ['date'] are in the columns"
+2025-12-01 15:40:24,787 - INFO - Inserted 198 rows to staging
+2025-12-01 15:40:24,788 - INFO - Processing batch 48.0/102
+2025-12-01 15:42:24,835 - INFO - Inserted 199 rows to staging
+2025-12-01 15:42:24,835 - INFO - Processing batch 49.0/102
+2025-12-01 15:44:24,819 - INFO - Inserted 200 rows to staging
+2025-12-01 15:44:24,820 - INFO - Processing batch 50.0/102
+2025-12-01 15:46:24,828 - INFO - Inserted 200 rows to staging
+2025-12-01 15:46:24,829 - INFO - Processing batch 51.0/102
+2025-12-01 15:48:24,850 - INFO - Inserted 200 rows to staging
+2025-12-01 15:48:24,851 - INFO - Processing batch 52.0/102
+2025-12-01 15:50:24,851 - INFO - Inserted 200 rows to staging
+2025-12-01 15:50:24,851 - INFO - Processing batch 53.0/102
+2025-12-01 15:52:24,861 - INFO - Inserted 200 rows to staging
+2025-12-01 15:52:24,862 - INFO - Processing batch 54.0/102
+2025-12-01 15:53:45,356 - ERROR - Failed to download LCG: "None of ['date'] are in the columns"
+2025-12-01 15:54:24,847 - INFO - Inserted 198 rows to staging
+2025-12-01 15:54:24,848 - INFO - Processing batch 55.0/102
+2025-12-01 15:56:24,871 - INFO - Inserted 200 rows to staging
+2025-12-01 15:56:24,872 - INFO - Processing batch 56.0/102
+2025-12-01 15:58:24,889 - INFO - Inserted 200 rows to staging
+2025-12-01 15:58:24,889 - INFO - Processing batch 57.0/102
+2025-12-01 16:00:24,927 - INFO - Inserted 200 rows to staging
+2025-12-01 16:00:24,928 - INFO - Processing batch 58.0/102
+2025-12-01 16:02:21,240 - ERROR - Failed to download MESA: "None of ['date'] are in the columns"
+2025-12-01 16:02:24,904 - INFO - Inserted 198 rows to staging
+2025-12-01 16:02:24,905 - INFO - Processing batch 59.0/102
+2025-12-01 16:04:24,898 - INFO - Inserted 200 rows to staging
+2025-12-01 16:04:24,899 - INFO - Processing batch 60.0/102
+2025-12-01 16:04:41,691 - ERROR - Failed to download MTSR: "None of ['date'] are in the columns"
+2025-12-01 16:06:24,917 - INFO - Inserted 198 rows to staging
+2025-12-01 16:06:24,918 - INFO - Processing batch 61.0/102
+2025-12-01 16:06:40,652 - ERROR - Failed to download MRC: "None of ['date'] are in the columns"
+2025-12-01 16:08:24,931 - INFO - Inserted 198 rows to staging
+2025-12-01 16:08:24,932 - INFO - Processing batch 62.0/102
+2025-12-01 16:10:24,959 - INFO - Inserted 200 rows to staging
+2025-12-01 16:10:24,960 - INFO - Processing batch 63.0/102
+2025-12-01 16:12:24,994 - INFO - Inserted 200 rows to staging
+2025-12-01 16:12:24,995 - INFO - Processing batch 64.0/102
+2025-12-01 16:14:25,002 - INFO - Inserted 200 rows to staging
+2025-12-01 16:14:25,003 - INFO - Processing batch 65.0/102
+2025-12-01 16:16:25,060 - INFO - Inserted 200 rows to staging
+2025-12-01 16:16:25,061 - INFO - Processing batch 66.0/102
+2025-12-01 16:18:25,030 - INFO - Inserted 200 rows to staging
+2025-12-01 16:18:25,031 - INFO - Processing batch 67.0/102
+2025-12-01 16:20:25,075 - INFO - Inserted 200 rows to staging
+2025-12-01 16:20:25,076 - INFO - Processing batch 68.0/102
+2025-12-01 16:20:39,499 - ERROR - Failed to download OPT: "None of ['date'] are in the columns"
+2025-12-01 16:22:25,217 - INFO - Inserted 198 rows to staging
+2025-12-01 16:22:25,218 - INFO - Processing batch 69.0/102
+2025-12-01 16:24:25,099 - INFO - Inserted 200 rows to staging
+2025-12-01 16:24:25,101 - INFO - Processing batch 70.0/102
+2025-12-01 16:26:25,138 - INFO - Inserted 200 rows to staging
+2025-12-01 16:26:25,139 - INFO - Processing batch 71.0/102
+2025-12-01 16:27:27,482 - ERROR - Failed to download PINC: "None of ['date'] are in the columns"
+2025-12-01 16:28:25,126 - INFO - Inserted 198 rows to staging
+2025-12-01 16:28:25,127 - INFO - Processing batch 72.0/102
+2025-12-01 16:30:25,127 - INFO - Inserted 200 rows to staging
+2025-12-01 16:30:25,127 - INFO - Processing batch 73.0/102
+2025-12-01 16:32:25,136 - INFO - Inserted 200 rows to staging
+2025-12-01 16:32:25,136 - INFO - Processing batch 74.0/102
+2025-12-01 16:32:49,194 - ERROR - Failed to download PTNT: "None of ['date'] are in the columns"
+2025-12-01 16:33:04,783 - ERROR - Failed to download PVBC: "None of ['date'] are in the columns"
+2025-12-01 16:34:25,157 - INFO - Inserted 196 rows to staging
+2025-12-01 16:34:25,157 - INFO - Processing batch 75.0/102
+2025-12-01 16:36:25,190 - INFO - Inserted 200 rows to staging
+2025-12-01 16:36:25,191 - INFO - Processing batch 76.0/102
+2025-12-01 16:38:25,346 - INFO - Inserted 200 rows to staging
+2025-12-01 16:38:25,347 - INFO - Processing batch 77.0/102
+2025-12-01 16:40:25,254 - INFO - Inserted 200 rows to staging
+2025-12-01 16:40:25,255 - INFO - Processing batch 78.0/102
+2025-12-01 16:42:25,269 - INFO - Inserted 200 rows to staging
+2025-12-01 16:42:25,270 - INFO - Processing batch 79.0/102
+2025-12-01 16:44:25,270 - INFO - Inserted 200 rows to staging
+2025-12-01 16:44:25,271 - INFO - Processing batch 80.0/102
+2025-12-01 16:46:25,286 - INFO - Inserted 200 rows to staging
+2025-12-01 16:46:25,286 - INFO - Processing batch 81.0/102
+2025-12-01 16:48:25,298 - INFO - Inserted 200 rows to staging
+2025-12-01 16:48:25,299 - INFO - Processing batch 82.0/102
+2025-12-01 16:50:25,318 - INFO - Inserted 200 rows to staging
+2025-12-01 16:50:25,319 - INFO - Processing batch 83.0/102
+2025-12-01 16:52:25,307 - INFO - Inserted 200 rows to staging
+2025-12-01 16:52:25,308 - INFO - Processing batch 84.0/102
+2025-12-01 16:53:22,891 - ERROR - Failed to download SOND: "None of ['date'] are in the columns"
+2025-12-01 16:54:25,333 - INFO - Inserted 198 rows to staging
+2025-12-01 16:54:25,333 - INFO - Processing batch 85.0/102
+2025-12-01 16:56:09,807 - ERROR - Failed to download SRDX: "None of ['date'] are in the columns"
+2025-12-01 16:56:25,351 - INFO - Inserted 198 rows to staging
+2025-12-01 16:56:25,351 - INFO - Processing batch 86.0/102
+2025-12-01 16:58:25,342 - INFO - Inserted 200 rows to staging
+2025-12-01 16:58:25,343 - INFO - Processing batch 87.0/102
+2025-12-01 17:00:25,358 - INFO - Inserted 200 rows to staging
+2025-12-01 17:00:25,359 - INFO - Processing batch 88.0/102
+2025-12-01 17:02:01,364 - ERROR - Failed to download TEAF: "None of ['date'] are in the columns"
+2025-12-01 17:02:25,386 - INFO - Inserted 198 rows to staging
+2025-12-01 17:02:25,387 - INFO - Processing batch 89.0/102
+2025-12-01 17:04:25,385 - INFO - Inserted 200 rows to staging
+2025-12-01 17:04:25,386 - INFO - Processing batch 90.0/102
+2025-12-01 17:06:25,403 - INFO - Inserted 200 rows to staging
+2025-12-01 17:06:25,404 - INFO - Processing batch 91.0/102
+2025-12-01 17:08:25,385 - INFO - Inserted 200 rows to staging
+2025-12-01 17:08:25,386 - INFO - Processing batch 92.0/102
+2025-12-01 17:10:25,483 - INFO - Inserted 200 rows to staging
+2025-12-01 17:10:25,484 - INFO - Processing batch 93.0/102
+2025-12-01 17:12:25,431 - INFO - Inserted 200 rows to staging
+2025-12-01 17:12:25,432 - INFO - Processing batch 94.0/102
+2025-12-01 17:14:25,459 - INFO - Inserted 200 rows to staging
+2025-12-01 17:14:25,461 - INFO - Processing batch 95.0/102
+2025-12-01 17:16:25,450 - INFO - Inserted 200 rows to staging
+2025-12-01 17:16:25,451 - INFO - Processing batch 96.0/102
+2025-12-01 17:16:54,208 - ERROR - Failed to download VMEO: "None of ['date'] are in the columns"
+2025-12-01 17:18:25,447 - INFO - Inserted 197 rows to staging
+2025-12-01 17:18:25,447 - INFO - Processing batch 97.0/102
+2025-12-01 17:20:25,444 - INFO - Inserted 200 rows to staging
+2025-12-01 17:20:25,445 - INFO - Processing batch 98.0/102
+2025-12-01 17:22:23,067 - ERROR - Failed to download WSBCP: "None of ['date'] are in the columns"
+2025-12-01 17:22:25,454 - INFO - Inserted 198 rows to staging
+2025-12-01 17:22:25,455 - INFO - Processing batch 99.0/102
+2025-12-01 17:24:25,485 - INFO - Inserted 200 rows to staging
+2025-12-01 17:24:25,485 - INFO - Processing batch 100.0/102
+2025-12-01 17:25:11,076 - ERROR - Failed to download SYNB: "None of ['date'] are in the columns"
+2025-12-01 17:26:25,516 - INFO - Inserted 194 rows to staging
+2025-12-01 17:26:25,517 - INFO - Processing batch 101.0/102
+2025-12-01 17:28:25,501 - INFO - Inserted 200 rows to staging
+2025-12-01 17:28:25,502 - INFO - Processing batch 102.0/102
+2025-12-01 17:29:31,486 - ERROR - Failed to download ZXZZT: "None of ['date'] are in the columns"
+2025-12-01 17:29:36,309 - INFO - Inserted 116 rows to staging
+2025-12-01 17:29:36,310 - INFO - Download complete.  Failed tickers: 29
+2025-12-01 17:48:36,577 - INFO - Validating staging data
+2025-12-01 17:48:36,637 - INFO - Staging table contains 20,252 rows
+2025-12-01 17:48:36,638 - INFO - Validation passed - no issues found
+2025-12-01 17:48:36,638 - INFO - Moving staging data to production...
+2025-12-01 17:48:36,775 - INFO - Moved 20,252 rows to production
+2025-12-01 17:48:36,795 - INFO - Successfully moved staging to production
+2025-12-01 17:48:49,190 - INFO - Found 0 stale tickers (no prices in 30 days)
+2025-12-01 17:48:49,191 - INFO - No stale tickers to mark inactive
+2025-12-02 13:47:57,753 - INFO - Initialize TiingoDataManager with rate limiting
+2025-12-02 13:48:01,949 - INFO - Fetching all tickers from Tiingo...
+2025-12-02 13:48:02,437 - INFO - Filtered out 4746 junk tickers (warrants, units, preferreds)
+2025-12-02 13:48:35,817 - INFO - No updates on 'is_active' to symbols.
+2025-12-02 13:48:47,420 - INFO - Enriched 1 company names from all_symbols table
+2025-12-02 13:48:47,420 - INFO - Remaining nulls: 6
+2025-12-02 13:49:06,866 - INFO - Null company names: 0, Empty company names: 0
+2025-12-02 13:49:30,228 - INFO - Enriched 6 company names from all_symbols table
+2025-12-02 13:49:30,229 - INFO - Remaining nulls: 0
+2025-12-02 13:49:35,253 - INFO - Corrected 3 ETFs mislabeled as stocks
+2025-12-02 13:50:24,055 - INFO - Upserting 7 symbols...
+2025-12-02 13:50:24,136 - INFO - Processed 7/7 symbols
+2025-12-02 13:50:24,137 - INFO - Successfully upserted 7 symbols, 0 failed
+2025-12-02 13:50:24,137 - INFO - Failed symbols inserted: 0
+2025-12-02 13:51:05,880 - INFO - Fetching metadata from yFinance...
+2025-12-02 13:51:06,280 - INFO - Found 1 tickers from yFinance.
+2025-12-02 13:51:06,284 - INFO - Upserting 1 stocks...
+2025-12-02 13:51:06,305 - INFO - Processed 1/1 symbols
+2025-12-02 13:51:06,306 - INFO - Successfully upserted 1 symbols, 0 failed
+2025-12-02 13:51:42,428 - INFO - Starting price data download for 10166
+2025-12-02 13:51:42,459 - INFO - Processing batch 1.0/102
+2025-12-02 13:53:11,328 - ERROR - Failed to download FMTO: "None of ['date'] are in the columns"
+2025-12-02 13:53:41,371 - INFO - Inserted 99 rows to staging
+2025-12-02 13:53:41,372 - INFO - Processing batch 2.0/102
+2025-12-02 13:55:41,387 - INFO - Inserted 100 rows to staging
+2025-12-02 13:55:41,388 - INFO - Processing batch 3.0/102
+2025-12-02 13:57:41,385 - INFO - Inserted 100 rows to staging
+2025-12-02 13:57:41,386 - INFO - Processing batch 4.0/102
+2025-12-02 13:58:54,583 - ERROR - Failed to download LSB: "None of ['date'] are in the columns"
+2025-12-02 13:59:23,347 - ERROR - Failed to download AMBC: "None of ['date'] are in the columns"
+2025-12-02 13:59:41,420 - INFO - Inserted 98 rows to staging
+2025-12-02 13:59:41,421 - INFO - Processing batch 5.0/102
+2025-12-02 13:59:42,587 - ERROR - Failed to download NFINU: "None of ['date'] are in the columns"
+2025-12-02 14:00:22,222 - ERROR - Failed to download NFINW: "None of ['date'] are in the columns"
+2025-12-02 14:01:41,441 - INFO - Inserted 98 rows to staging
+2025-12-02 14:01:41,442 - INFO - Processing batch 6.0/102
+2025-12-02 14:03:41,469 - INFO - Inserted 100 rows to staging
+2025-12-02 14:03:41,470 - INFO - Processing batch 7.0/102
+2025-12-02 14:05:41,422 - INFO - Inserted 100 rows to staging
+2025-12-02 14:05:41,423 - INFO - Processing batch 8.0/102
+2025-12-02 14:06:38,995 - ERROR - Failed to download ATUS: "None of ['date'] are in the columns"
+2025-12-02 14:07:41,456 - INFO - Inserted 99 rows to staging
+2025-12-02 14:07:41,457 - INFO - Processing batch 9.0/102
+2025-12-02 14:09:41,450 - INFO - Inserted 100 rows to staging
+2025-12-02 14:09:41,452 - INFO - Processing batch 10.0/102
+2025-12-02 14:11:41,448 - INFO - Inserted 100 rows to staging
+2025-12-02 14:11:41,449 - INFO - Processing batch 11.0/102
+2025-12-02 14:13:41,456 - INFO - Inserted 100 rows to staging
+2025-12-02 14:13:41,457 - INFO - Processing batch 12.0/102
+2025-12-02 14:15:41,479 - INFO - Inserted 100 rows to staging
+2025-12-02 14:15:41,479 - INFO - Processing batch 13.0/102
+2025-12-02 14:17:41,497 - INFO - Inserted 100 rows to staging
+2025-12-02 14:17:41,498 - INFO - Processing batch 14.0/102
+2025-12-02 14:19:41,501 - INFO - Inserted 100 rows to staging
+2025-12-02 14:19:41,502 - INFO - Processing batch 15.0/102
+2025-12-02 14:21:41,517 - INFO - Inserted 100 rows to staging
+2025-12-02 14:21:41,518 - INFO - Processing batch 16.0/102
+2025-12-02 14:23:41,543 - INFO - Inserted 100 rows to staging
+2025-12-02 14:23:41,544 - INFO - Processing batch 17.0/102
+2025-12-02 14:25:41,546 - INFO - Inserted 100 rows to staging
+2025-12-02 14:25:41,547 - INFO - Processing batch 18.0/102
+2025-12-02 14:26:10,330 - ERROR - Failed to download CHEK: "None of ['date'] are in the columns"
+2025-12-02 14:27:41,551 - INFO - Inserted 99 rows to staging
+2025-12-02 14:27:41,552 - INFO - Processing batch 19.0/102
+2025-12-02 14:28:11,536 - ERROR - Failed to download CLSD: "None of ['date'] are in the columns"
+2025-12-02 14:29:41,575 - INFO - Inserted 99 rows to staging
+2025-12-02 14:29:41,576 - INFO - Processing batch 20.0/102
+2025-12-02 14:31:41,621 - INFO - Inserted 100 rows to staging
+2025-12-02 14:31:41,622 - INFO - Processing batch 21.0/102
+2025-12-02 14:33:41,605 - INFO - Inserted 100 rows to staging
+2025-12-02 14:33:41,607 - INFO - Processing batch 22.0/102
+2025-12-02 14:35:41,644 - INFO - Inserted 100 rows to staging
+2025-12-02 14:35:41,644 - INFO - Processing batch 23.0/102
+2025-12-02 14:37:41,654 - INFO - Inserted 100 rows to staging
+2025-12-02 14:37:41,655 - INFO - Processing batch 24.0/102
+2025-12-02 14:39:41,665 - INFO - Inserted 100 rows to staging
+2025-12-02 14:39:41,666 - INFO - Processing batch 25.0/102
+2025-12-02 14:41:41,684 - INFO - Inserted 100 rows to staging
+2025-12-02 14:41:41,684 - INFO - Processing batch 26.0/102
+2025-12-02 14:42:04,444 - ERROR - Failed to download DRH: "None of ['date'] are in the columns"
+2025-12-02 14:43:41,692 - INFO - Inserted 99 rows to staging
+2025-12-02 14:43:41,693 - INFO - Processing batch 27.0/102
+2025-12-02 14:45:41,720 - INFO - Inserted 100 rows to staging
+2025-12-02 14:45:41,721 - INFO - Processing batch 28.0/102
+2025-12-02 14:47:41,763 - INFO - Inserted 100 rows to staging
+2025-12-02 14:47:41,764 - INFO - Processing batch 29.0/102
+2025-12-02 14:49:41,780 - INFO - Inserted 100 rows to staging
+2025-12-02 14:49:41,780 - INFO - Processing batch 30.0/102
+2025-12-02 14:51:41,792 - INFO - Inserted 100 rows to staging
+2025-12-02 14:51:41,793 - INFO - Processing batch 31.0/102
+2025-12-02 14:53:41,813 - INFO - Inserted 100 rows to staging
+2025-12-02 14:53:41,814 - INFO - Processing batch 32.0/102
+2025-12-02 14:55:22,607 - ERROR - Failed to download FDHT: "None of ['date'] are in the columns"
+2025-12-02 14:55:41,795 - INFO - Inserted 99 rows to staging
+2025-12-02 14:55:41,796 - INFO - Processing batch 33.0/102
+2025-12-02 14:55:53,886 - ERROR - Failed to download FDWM: "None of ['date'] are in the columns"
+2025-12-02 14:57:41,819 - INFO - Inserted 99 rows to staging
+2025-12-02 14:57:41,820 - INFO - Processing batch 34.0/102
+2025-12-02 14:59:41,835 - INFO - Inserted 100 rows to staging
+2025-12-02 14:59:41,836 - INFO - Processing batch 35.0/102
+2025-12-02 15:01:41,848 - INFO - Inserted 100 rows to staging
+2025-12-02 15:01:41,849 - INFO - Processing batch 36.0/102
+2025-12-02 15:01:51,434 - ERROR - Failed to download FOSLL: "None of ['date'] are in the columns"
+2025-12-02 15:02:53,849 - ERROR - Failed to download FSBD: "None of ['date'] are in the columns"
+2025-12-02 15:03:09,459 - ERROR - Failed to download FSLD: "None of ['date'] are in the columns"
+2025-12-02 15:03:41,904 - INFO - Inserted 97 rows to staging
+2025-12-02 15:03:41,905 - INFO - Processing batch 37.0/102
+2025-12-02 15:05:41,922 - INFO - Inserted 100 rows to staging
+2025-12-02 15:05:41,923 - INFO - Processing batch 38.0/102
+2025-12-02 15:05:52,702 - ERROR - Failed to download FSST: "None of ['date'] are in the columns"
+2025-12-02 15:07:41,945 - INFO - Inserted 99 rows to staging
+2025-12-02 15:07:41,946 - INFO - Processing batch 39.0/102
+2025-12-02 15:09:41,958 - INFO - Inserted 100 rows to staging
+2025-12-02 15:09:41,959 - INFO - Processing batch 40.0/102
+2025-12-02 15:10:15,544 - ERROR - Failed to download GNFT: "None of ['date'] are in the columns"
+2025-12-02 15:11:42,001 - INFO - Inserted 99 rows to staging
+2025-12-02 15:11:42,002 - INFO - Processing batch 41.0/102
+2025-12-02 15:13:41,993 - INFO - Inserted 100 rows to staging
+2025-12-02 15:13:41,994 - INFO - Processing batch 42.0/102
+2025-12-02 15:15:42,008 - INFO - Inserted 100 rows to staging
+2025-12-02 15:15:42,009 - INFO - Processing batch 43.0/102
+2025-12-02 15:17:15,723 - ERROR - Failed to download HONE: "None of ['date'] are in the columns"
+2025-12-02 15:17:42,054 - INFO - Inserted 99 rows to staging
+2025-12-02 15:17:42,055 - INFO - Processing batch 44.0/102
+2025-12-02 15:19:42,050 - INFO - Inserted 100 rows to staging
+2025-12-02 15:19:42,051 - INFO - Processing batch 45.0/102
+2025-12-02 15:21:42,064 - INFO - Inserted 100 rows to staging
+2025-12-02 15:21:42,064 - INFO - Processing batch 46.0/102
+2025-12-02 15:23:42,102 - INFO - Inserted 100 rows to staging
+2025-12-02 15:23:42,103 - INFO - Processing batch 47.0/102
+2025-12-02 15:25:19,320 - ERROR - Failed to download INFA: "None of ['date'] are in the columns"
+2025-12-02 15:25:42,122 - INFO - Inserted 99 rows to staging
+2025-12-02 15:25:42,123 - INFO - Processing batch 48.0/102
+2025-12-02 15:26:48,216 - ERROR - Failed to download IPG: "None of ['date'] are in the columns"
+2025-12-02 15:27:42,127 - INFO - Inserted 99 rows to staging
+2025-12-02 15:27:42,128 - INFO - Processing batch 49.0/102
+2025-12-02 15:29:42,171 - INFO - Inserted 100 rows to staging
+2025-12-02 15:29:42,171 - INFO - Processing batch 50.0/102
+2025-12-02 15:31:42,179 - INFO - Inserted 100 rows to staging
+2025-12-02 15:31:42,180 - INFO - Processing batch 51.0/102
+2025-12-02 15:33:42,217 - INFO - Inserted 100 rows to staging
+2025-12-02 15:33:42,217 - INFO - Processing batch 52.0/102
+2025-12-02 15:35:42,252 - INFO - Inserted 100 rows to staging
+2025-12-02 15:35:42,253 - INFO - Processing batch 53.0/102
+2025-12-02 15:37:42,279 - INFO - Inserted 100 rows to staging
+2025-12-02 15:37:42,280 - INFO - Processing batch 54.0/102
+2025-12-02 15:39:11,186 - ERROR - Failed to download LCG: "None of ['date'] are in the columns"
+2025-12-02 15:39:42,292 - INFO - Inserted 99 rows to staging
+2025-12-02 15:39:42,293 - INFO - Processing batch 55.0/102
+2025-12-02 15:41:42,319 - INFO - Inserted 100 rows to staging
+2025-12-02 15:41:42,320 - INFO - Processing batch 56.0/102
+2025-12-02 15:43:42,343 - INFO - Inserted 100 rows to staging
+2025-12-02 15:43:42,344 - INFO - Processing batch 57.0/102
+2025-12-02 15:45:42,303 - INFO - Inserted 100 rows to staging
+2025-12-02 15:45:42,304 - INFO - Processing batch 58.0/102
+2025-12-02 15:47:42,355 - INFO - Inserted 100 rows to staging
+2025-12-02 15:47:42,355 - INFO - Processing batch 59.0/102
+2025-12-02 15:47:47,106 - ERROR - Failed to download MESA: "None of ['date'] are in the columns"
+2025-12-02 15:49:42,357 - INFO - Inserted 99 rows to staging
+2025-12-02 15:49:42,357 - INFO - Processing batch 60.0/102
+2025-12-02 15:50:07,532 - ERROR - Failed to download MTSR: "None of ['date'] are in the columns"
+2025-12-02 15:51:42,380 - INFO - Inserted 99 rows to staging
+2025-12-02 15:51:42,381 - INFO - Processing batch 61.0/102
+2025-12-02 15:52:06,402 - ERROR - Failed to download MRC: "None of ['date'] are in the columns"
+2025-12-02 15:53:42,401 - INFO - Inserted 99 rows to staging
+2025-12-02 15:53:42,402 - INFO - Processing batch 62.0/102
+2025-12-02 15:55:42,401 - INFO - Inserted 100 rows to staging
+2025-12-02 15:55:42,402 - INFO - Processing batch 63.0/102
+2025-12-02 15:57:42,440 - INFO - Inserted 100 rows to staging
+2025-12-02 15:57:42,441 - INFO - Processing batch 64.0/102
+2025-12-02 15:59:42,453 - INFO - Inserted 100 rows to staging
+2025-12-02 15:59:42,454 - INFO - Processing batch 65.0/102
+2025-12-02 16:01:42,455 - INFO - Inserted 100 rows to staging
+2025-12-02 16:01:42,456 - INFO - Processing batch 66.0/102
+2025-12-02 16:03:42,502 - INFO - Inserted 100 rows to staging
+2025-12-02 16:03:42,503 - INFO - Processing batch 67.0/102
+2025-12-02 16:05:42,506 - INFO - Inserted 100 rows to staging
+2025-12-02 16:05:42,507 - INFO - Processing batch 68.0/102
+2025-12-02 16:06:05,362 - ERROR - Failed to download OPT: "None of ['date'] are in the columns"
+2025-12-02 16:07:42,540 - INFO - Inserted 99 rows to staging
+2025-12-02 16:07:42,541 - INFO - Processing batch 69.0/102
+2025-12-02 16:09:42,574 - INFO - Inserted 100 rows to staging
+2025-12-02 16:09:42,575 - INFO - Processing batch 70.0/102
+2025-12-02 16:11:42,551 - INFO - Inserted 100 rows to staging
+2025-12-02 16:11:42,552 - INFO - Processing batch 71.0/102
+2025-12-02 16:12:53,356 - ERROR - Failed to download PINC: "None of ['date'] are in the columns"
+2025-12-02 16:13:42,604 - INFO - Inserted 99 rows to staging
+2025-12-02 16:13:42,605 - INFO - Processing batch 72.0/102
+2025-12-02 16:15:42,718 - INFO - Inserted 100 rows to staging
+2025-12-02 16:15:42,720 - INFO - Processing batch 73.0/102
+2025-12-02 16:17:42,587 - INFO - Inserted 100 rows to staging
+2025-12-02 16:17:42,588 - INFO - Processing batch 74.0/102
+2025-12-02 16:18:15,083 - ERROR - Failed to download PTNT: "None of ['date'] are in the columns"
+2025-12-02 16:18:30,633 - ERROR - Failed to download PVBC: "None of ['date'] are in the columns"
+2025-12-02 16:19:42,642 - INFO - Inserted 98 rows to staging
+2025-12-02 16:19:42,643 - INFO - Processing batch 75.0/102
+2025-12-02 16:21:42,651 - INFO - Inserted 100 rows to staging
+2025-12-02 16:21:42,652 - INFO - Processing batch 76.0/102
+2025-12-02 16:22:31,864 - ERROR - Failed to download RAYC: "None of ['date'] are in the columns"
+2025-12-02 16:23:42,654 - INFO - Inserted 99 rows to staging
+2025-12-02 16:23:42,655 - INFO - Processing batch 77.0/102
+2025-12-02 16:25:42,669 - INFO - Inserted 100 rows to staging
+2025-12-02 16:25:42,670 - INFO - Processing batch 78.0/102
+2025-12-02 16:27:42,689 - INFO - Inserted 100 rows to staging
+2025-12-02 16:27:42,690 - INFO - Processing batch 79.0/102
+2025-12-02 16:29:42,715 - INFO - Inserted 100 rows to staging
+2025-12-02 16:29:42,716 - INFO - Processing batch 80.0/102
+2025-12-02 16:31:42,727 - INFO - Inserted 100 rows to staging
+2025-12-02 16:31:42,727 - INFO - Processing batch 81.0/102
+2025-12-02 16:33:42,749 - INFO - Inserted 100 rows to staging
+2025-12-02 16:33:42,750 - INFO - Processing batch 82.0/102
+2025-12-02 16:35:42,752 - INFO - Inserted 100 rows to staging
+2025-12-02 16:35:42,753 - INFO - Processing batch 83.0/102
+2025-12-02 16:37:42,799 - INFO - Inserted 100 rows to staging
+2025-12-02 16:37:42,800 - INFO - Processing batch 84.0/102
+2025-12-02 16:38:48,767 - ERROR - Failed to download SOND: "None of ['date'] are in the columns"
+2025-12-02 16:39:42,822 - INFO - Inserted 99 rows to staging
+2025-12-02 16:39:42,823 - INFO - Processing batch 85.0/102
+2025-12-02 16:41:35,662 - ERROR - Failed to download SRDX: "None of ['date'] are in the columns"
+2025-12-02 16:41:42,798 - INFO - Inserted 99 rows to staging
+2025-12-02 16:41:42,799 - INFO - Processing batch 86.0/102
+2025-12-02 16:43:42,858 - INFO - Inserted 100 rows to staging
+2025-12-02 16:43:42,859 - INFO - Processing batch 87.0/102
+2025-12-02 16:45:42,855 - INFO - Inserted 100 rows to staging
+2025-12-02 16:45:42,856 - INFO - Processing batch 88.0/102
+2025-12-02 16:47:27,226 - ERROR - Failed to download TEAF: "None of ['date'] are in the columns"
+2025-12-02 16:47:42,855 - INFO - Inserted 99 rows to staging
+2025-12-02 16:47:42,856 - INFO - Processing batch 89.0/102
+2025-12-02 16:49:42,884 - INFO - Inserted 100 rows to staging
+2025-12-02 16:49:42,884 - INFO - Processing batch 90.0/102
+2025-12-02 16:51:42,936 - INFO - Inserted 100 rows to staging
+2025-12-02 16:51:42,937 - INFO - Processing batch 91.0/102
+2025-12-02 16:53:42,906 - INFO - Inserted 100 rows to staging
+2025-12-02 16:53:42,907 - INFO - Processing batch 92.0/102
+2025-12-02 16:55:42,940 - INFO - Inserted 100 rows to staging
+2025-12-02 16:55:42,941 - INFO - Processing batch 93.0/102
+2025-12-02 16:57:42,937 - INFO - Inserted 100 rows to staging
+2025-12-02 16:57:42,938 - INFO - Processing batch 94.0/102
+2025-12-02 16:59:42,972 - INFO - Inserted 100 rows to staging
+2025-12-02 16:59:42,974 - INFO - Processing batch 95.0/102
+2025-12-02 17:01:42,966 - INFO - Inserted 100 rows to staging
+2025-12-02 17:01:42,968 - INFO - Processing batch 96.0/102
+2025-12-02 17:02:20,135 - ERROR - Failed to download VMEO: "None of ['date'] are in the columns"
+2025-12-02 17:03:21,344 - ERROR - Failed to download VRNT: "None of ['date'] are in the columns"
+2025-12-02 17:03:42,971 - INFO - Inserted 98 rows to staging
+2025-12-02 17:03:42,971 - INFO - Processing batch 97.0/102
+2025-12-02 17:05:42,973 - INFO - Inserted 100 rows to staging
+2025-12-02 17:05:42,974 - INFO - Processing batch 98.0/102
+2025-12-02 17:07:42,983 - INFO - Inserted 100 rows to staging
+2025-12-02 17:07:42,984 - INFO - Processing batch 99.0/102
+2025-12-02 17:07:49,012 - ERROR - Failed to download WSBCP: "None of ['date'] are in the columns"
+2025-12-02 17:09:42,993 - INFO - Inserted 99 rows to staging
+2025-12-02 17:09:42,994 - INFO - Processing batch 100.0/102
+2025-12-02 17:10:37,493 - ERROR - Failed to download SYNB: "None of ['date'] are in the columns"
+2025-12-02 17:11:42,988 - INFO - Inserted 99 rows to staging
+2025-12-02 17:11:42,989 - INFO - Processing batch 101.0/102
+2025-12-02 17:13:43,038 - INFO - Inserted 100 rows to staging
+2025-12-02 17:13:43,039 - INFO - Processing batch 102.0/102
+2025-12-02 17:14:57,405 - ERROR - Failed to download ZXZZT: "None of ['date'] are in the columns"
+2025-12-02 17:15:02,224 - INFO - Inserted 65 rows to staging
+2025-12-02 17:15:02,225 - INFO - Download complete.  Failed tickers: 36
+2025-12-02 17:28:39,328 - INFO - Validating staging data
+2025-12-02 17:28:39,372 - INFO - Staging table contains 10,130 rows
+2025-12-02 17:28:39,372 - INFO - Validation passed - no issues found
+2025-12-02 17:28:39,373 - INFO - Moving staging data to production...
+2025-12-02 17:28:39,449 - INFO - Moved 10,130 rows to production
+2025-12-02 17:28:39,468 - INFO - Successfully moved staging to production
+2025-12-02 17:28:44,472 - INFO - Found 0 stale tickers (no prices in 30 days)
+2025-12-02 17:28:44,472 - INFO - No stale tickers to mark inactive
