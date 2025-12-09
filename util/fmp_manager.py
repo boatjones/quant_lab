@@ -36,7 +36,7 @@ class FmpDataManager:
         self.db = PgHook()
 
         # Add rate limiters
-        self.fmp_limiter = RateLimiter(calls_per_minute=30)
+        self.fmp_limiter = RateLimiter(calls_per_minute=250)
 
         logger.info("Initialized FmpDataManager")
 
@@ -123,28 +123,47 @@ class FmpDataManager:
         df_balance = pd.DataFrame(balance_sheet)
         df_cashflow = pd.DataFrame(cashflow)
 
+        if df_income.empty or df_balance.empty or df_cashflow.empty:
+            logger.warning("One or more statements empty, skipping merge")
+            return pd.DataFrame
+
         # Merge on shared metadata columns
         merge_keys = ['symbol', 'date', 'period']
 
-        merged = df_income.merge(df_balance, on=merge_keys, suffixes=('', '_drop'))
-        merged = merged.merge(df_cashflow, on=merge_keys, suffixes=('', '_drop'))
+        try:
 
-        # Drop duplicate columns
-        merged = merged[[col for col in merged.columns if not col.endswith('_drop')]]
+            merged = df_income.merge(df_balance, on=merge_keys, suffixes=('', '_drop'))
+            merged = merged.merge(df_cashflow, on=merge_keys, suffixes=('', '_drop'))
 
-        return merged
+            # Drop duplicate columns
+            merged = merged[[col for col in merged.columns if not col.endswith('_drop')]]
+
+            return merged
+        except Exception as e:
+            logger.error(f"Failed to merge statements: {e}")
+            return pd.DataFrame
 
     def transform_to_schema(self, df) -> pd.DataFrame:
         """Map FMP fields to fundamentals table schema"""
+
+        if df.empty:
+            return pd.DataFrame
+        
+        # Check for required fields
+        required_fields = ['symbol', 'date', 'fillingDate', 'period']
+        missing = [f for f in required_fields if f not in df.columns]
+        if missing:
+            logger.error(f"Missing required fields: {missing}")
+            return pd.DataFrame
 
         # Create new DataFrame with schema columns
         transformed = pd.DataFrame({
             'ticker'             : df['symbol'],
             'period_end_date'    : pd.to_datetime(df['date']).dt.date,
-            'filing_date'        : pd.to_datetime(df['filingDate']).dt.date,
+            'filing_date'        : pd.to_datetime(df['fillingDate']).dt.date,  # <== API has a typo
             'report_type'        : df['period'],
             'revenue'            : df['revenue'],
-            'ebit'               : df['ebit'],
+            'ebit'               : df['operatingIncome'],  # <== ebit was removed from API
             'net_income'         : df['netIncome'],
             'total_assets'       : df['totalAssets'],
             'total_liabilities'  : df['totalLiabilities'],
@@ -155,8 +174,8 @@ class FmpDataManager:
             'total_debt'         : df['totalDebt'],
             'cash_and_equiv'     : df['cashAndCashEquivalents'],
             'cfo'                : df['netCashProvidedByOperatingActivities'],
-            'cfi'                : df['netCashProvidedByInvestingActivities'],
-            'cff'                : df['netCashProvidedByFinancingActivities'],
+            'cfi'                : df['netCashUsedForInvestingActivites'],   # <== different from API spec
+            'cff'                : df['netCashUsedProvidedByFinancingActivities'],  # <== different from API spec
             'capex'              : df['capitalExpenditure'].fillna(0).abs(),
             'shares_outstanding' : df['weightedAverageShsOutDil']
         })
@@ -195,6 +214,13 @@ class FmpDataManager:
             # Bulk insert this batch
             if batch_data:
                 combined_batch = pd.concat(batch_data, ignore_index=True)
+
+                # Deduplicate - keep last occurrance - most recent data
+                combined_batch = combined_batch.drop_duplicates(
+                    subset=['ticker', 'period_end_date', 'report_type'],
+                    keep='last'
+                )
+                
                 self.bulk_insert_fundamentals(combined_batch)
                 logger.info(f"Inserted {len(combined_batch)} rows from batch")
         
@@ -203,6 +229,9 @@ class FmpDataManager:
     def bulk_insert_fundamentals(self, df):
         """Insert fundamentals data using staging table with upsert logic"""
         try:
+            # Clear staging first
+            self.db.execute_sql("TRUNCATE fundamentals_staging")
+
             # Insert to staging table
             self.db.bulk_insert(df, 'fundamentals_staging')
             

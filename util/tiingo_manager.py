@@ -456,7 +456,7 @@ class TiingoDataManager:
         
         for i in range(0, len(ticker_list), batch_size):
             batch = ticker_list[i:i+batch_size]
-            logger.info(f"Processing batch {i/batch_size +1}/{len(ticker_list)//batch_size+1}")
+            logger.info(f"Processing batch {i//batch_size +1}/{len(ticker_list)//batch_size+1}")
 
             batch_data = []
 
@@ -648,3 +648,29 @@ class TiingoDataManager:
         except Exception as e:
             logger.error(f"Failed to move staging to production: {e}")
             return False
+        
+    def calculate_log_returns(self):
+        """Calculate log returns for the most recent trading day - a rolling 10 day windows computed"""
+        query = """
+            INSERT INTO daily_log_returns (ticker, trade_date, log_return)
+            WITH latest_prices AS (
+                SELECT 
+                    ticker,
+                    trade_date,
+                    price_close,
+                    LAG(price_close) OVER (PARTITION BY ticker ORDER BY trade_date) as prev_close
+                FROM ohlcv
+                WHERE trade_date >= (SELECT MAX(trade_date) - INTERVAL '10 days' FROM ohlcv)
+            )
+            SELECT 
+                ticker,
+                trade_date,
+                LN(price_close / prev_close) as log_return
+            FROM latest_prices
+            WHERE prev_close IS NOT NULL  -- Remove the trade_date = MAX filter
+            ON CONFLICT (ticker, trade_date) DO UPDATE
+                SET log_return = EXCLUDED.log_return;
+        """
+        
+        self.db.execute_sql(query)
+        logger.info("Calculated log returns for latest trading day")

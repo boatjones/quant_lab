@@ -81,6 +81,10 @@ CREATE TABLE fundamentals (
 );
 CREATE INDEX ON fundamentals(ticker, period_end_date, report_type);
 
+CREATE TABLE fundamentals_staging (
+    LIKE fundamentals INCLUDING ALL
+);
+
 CREATE VIEW fundamental_ratios AS
 WITH price_on_report_date AS (
     SELECT o.ticker, o.trade_date AS price_date, o.price_close
@@ -166,3 +170,21 @@ SELECT
     f.cash_and_equiv / NULLIF(f.shares_outstanding, 0) AS cash_per_share,
     (f.total_assets - f.total_liabilities) / NULLIF(f.shares_outstanding, 0) AS book_value_per_share
 FROM fundamentals f;
+
+CREATE TABLE daily_log_returns (
+    ticker TEXT,
+    trade_date DATE,
+    log_return DOUBLE PRECISION,
+    PRIMARY KEY (ticker, trade_date)
+);
+
+CREATE EXTENSION plpython3u;    
+
+CREATE TABLE adr_whitelist (
+        ticker TEXT PRIMARY KEY,
+        company_name TEXT,
+        country TEXT,
+        sector TEXT,
+        notes TEXT,
+        date_added DATE DEFAULT CURRENT_DATE
+);

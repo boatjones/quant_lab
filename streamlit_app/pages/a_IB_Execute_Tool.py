@@ -37,8 +37,10 @@ try:
 except:
     pass
 
-sys.path.insert(0, os.path.join(Path(__file__).parents[1]))
-from ib_classes import marketEqOrder, limitEqOrder, stopEqOrder, trailStopEqOrder
+project_root = Path(__file__).resolve().parents[2]  # Go up 2 levels: pages -> streamlit_app -> quant_lab
+sys.path.insert(0, str(project_root))
+
+from util.ib_classes import marketEqOrder, limitEqOrder, stopEqOrder, trailStopEqOrder
 
 st.set_page_config(page_title="IB Orders", layout="wide")
 

@@ -231,11 +231,12 @@ else:
             db.execute_sql(sql, (ticker, 'no_industry_data'))
 
         # Delete from symbols table as well
-        delete_sql = """
+        placeholders = ','.join(['%s'] * len(junk_stocks))
+        delete_sql = f"""
             DELETE FROM symbols
-            WHERE ticker in (SELECT ticker from excluded_tickers)
+            WHERE ticker in ({placeholders})
         """
-        db.execute_sql(delete_sql)
+        db.execute_sql(delete_sql, tuple(junk_stocks))
         logger.info(f"Added {len(junk_stocks)} to excluded_tickers and removed from symbols")
 
     # After all enrichment attempts...
@@ -307,3 +308,5 @@ if stale_count > 0:
 else:
     logger.info("No stale tickers to mark inactive")
 
+# Calculate log returns for daily_log_returns table
+tdm.calculate_log_returns()
