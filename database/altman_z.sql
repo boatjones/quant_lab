@@ -1,4 +1,4 @@
-
+-- to be coded
 
 /* altman z score
 Z = 1.2 × (Working Capital / Total Assets)

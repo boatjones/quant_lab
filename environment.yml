@@ -1,4 +1,4 @@
-name: quant_lab
+name: quant_env
 channels:
   - conda-forge
 dependencies:
