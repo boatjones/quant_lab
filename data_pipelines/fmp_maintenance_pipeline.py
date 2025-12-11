@@ -44,3 +44,6 @@ stock_list = db.psy_query('select ticker from stocks where ticker not in (select
 # Get fundamentals
 failed = fmp.load_all_fundamentals(stock_list, limit_annual=1, limit_quarterly=2)
 print(f"Loaded financials for {len(stock_list)} stocks with {len(failed)} failures.")
+
+# Refresh materialized views
+fmp.refresh_materialized_views()

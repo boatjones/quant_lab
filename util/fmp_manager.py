@@ -270,3 +270,14 @@ class FmpDataManager:
         except Exception as e:
             logger.error(f"Failed to bulk insert fundamentals: {e}")
             raise
+    
+    def refresh_materialized_views(self):
+        """Following updates to fundamentals table, refresh the materialized views"""
+        # Refresh fundamental ratios view
+        logger.info("Starting refresh of fundamental_ratios.  This may be long.")
+        self.db.execute_sql("REFRESH MATERIALIZED VIEW fundamental_ratios;")
+        logger.info("Completed refresh of fundamental_ratios.  Starting refresh of fundamental_per_share view")
+
+        # Refresh fundamentals_per_share view
+        self.db.execute_sql("REFRESH MATERIALIZED VIEW fundamental_per_share;")
+        logger.info("Completed refresh of fundamental_per_share")

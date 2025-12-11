@@ -165,14 +165,21 @@ def load_data_from_postgres(_db, symbols, start_date=None, end_date=None):
     st.write(f"**After pivot:** {len(df_wide)} daily dates, {len(df_wide.columns)} tickers")
     st.write(f"**Ticker columns:** {list(df_wide.columns)}")
 
-    df_wide = df_wide.resample('W-FRI').last()
+    # Conditional resampling based on frequency
+    use_weekly = st.session_state.get('rrg_use_weekly', True)
+    if use_weekly:
+        df_wide = df_wide.resample('W-FRI').last()
+        frequency_text = "weekly"
+    else:
+        frequency_text = "daily"
 
     # DEBUG: Check after resampling
-    st.write(f"**After weekly resample:** {len(df_wide)} weekly dates")
+    st.write(f"**After {frequency_text} resample:** {len(df_wide)} dates")
 
     # DEBUG: Check how many non-NaN values each ticker has
     non_nan_counts = df_wide.notna().sum()
-    st.write("**Weekly records per ticker (non-NaN):**")
+    frequency_text_display = "weekly" if use_weekly else "daily"
+    st.write(f"**{frequency_text_display.capitalize()} records per ticker (non-NaN):**")
     st.write(non_nan_counts.to_dict())
     
     # DEBUG: Check for tickers that were completely lost
@@ -399,7 +406,24 @@ st.markdown("---")
 
 # Sidebar
 with st.sidebar:
-    st.header("RRG Configuration")
+    st.header("⚙️ RRG Configuration")
+
+    # Data frequency selection
+    st.subheader("📊 Data Frequency")
+    use_weekly = st.checkbox(
+        "Use Weekly Data (Recommended)",
+        value=True,
+        key="rrg_use_weekly",
+        help="Weekly data provides smoother signals and follows standard RRG methodology"
+    )
+
+    if use_weekly:
+        st.caption("📈 Standard RRG - smoother rotation signals")
+    else:
+        st.caption("⚡ Daily data - faster but noisier signals")
+        st.warning("⚠️ Daily RRG may show false rotation signals")
+
+    st.markdown("---")
     
     # Show project info for debugging
     with st.expander("🔍 Debug Info", expanded=False):
@@ -570,10 +594,14 @@ with st.sidebar:
                             current_benchmark = st.session_state.get('rrg_benchmark', BENCHMARK)
                             
                             # Calculate RRG metrics
+                            # Adjust window for daily vs weekly data
+                            use_weekly = st.session_state.get('rrg_use_weekly', True)
+                            window_param = WINDOW if use_weekly else WINDOW * 5 # 14 weeks = 70 days
+
                             rs, rsr, rsr_roc, rsm, failed_tickers = calculate_rrg_metrics(
                                 st.session_state.rrg_tickers_data,
                                 st.session_state.rrg_benchmark_data,
-                                WINDOW
+                                window_param
                             )
                             
                             st.session_state.rrg_rs_dict = rs
@@ -593,7 +621,9 @@ with st.sidebar:
                                 st.session_state.rrg_current_date_idx = len(st.session_state.rrg_dates) - 1
 
                                 st.session_state.rrg_data_loaded = True
-                                st.success(f"✓ Loaded {len(data)} weeks of data for {len(tickers_with_data)} tickers")
+                                use_weekly = st.session_state.get('rrg_use_weekly', True)
+                                frequency_text = "weeks" if use_weekly else "days"
+                                st.success(f"✓ Loaded {len(data)} {frequency_text} of data for {len(tickers_with_data)} tickers")
 
                             # Show detailed errors for failed tickers
                             if failed_tickers:
@@ -639,7 +669,12 @@ if st.session_state.rrg_data_loaded:
     col1, col2, col3, col4 = st.columns([2, 1, 1, 2])
     
     with col1:
-        tail = st.slider("Tail Length (weeks)", 1, 10, 5, key="rrg_tail_slider")
+        use_weekly = st.session_state.get('rrg_use_weekly', True)
+
+        if use_weekly:
+            tail = st.slider("Tail Length (weeks)", 1, 20, 10, key="rrg_tail_slider")
+        else:
+            tail = st.slider("Tail Length (days)", 5, 100, 50, key="rrg_tail_slider")
     
     with col2:
         st.write("")  # Spacing
@@ -715,21 +750,25 @@ if st.session_state.rrg_data_loaded:
     # Info
     current_sheet = st.session_state.get('rrg_current_sheet', 'Unknown')
     sheet_description = TICKER_SHEETS.get(current_sheet, '')
-    
-    info_text = f"""
-    **Watchlist:** {current_sheet}"""
-    
-    if sheet_description:
-        info_text += f" ({sheet_description})"
-    
-    info_text += f"""  
-    **Date:** {current_date.strftime('%Y-%m-%d')}  
-    **Benchmark:** {st.session_state.rrg_benchmark}  
-    **Window:** {WINDOW} weeks  
-    **Tickers Displayed:** {len(st.session_state.rrg_selected_tickers)}
-    """
-    
-    st.info(info_text)
+    current_benchmark = st.session_state.get('rrg_benchmark', BENCHMARK)
+    current_date = st.session_state.rrg_dates[st.session_state.rrg_current_date_idx].strftime('%Y-%m-%d')
+    use_weekly = st.session_state.get('rrg_use_weekly', True)
+
+    if use_weekly:
+        window_display = f"{WINDOW} weeks"
+        freq_display = "Weekly"
+    else:
+        window_display = f"{WINDOW * 5} days"
+        freq_display = "Daily"    
+   
+    st.info(f"""
+    **Watchlist:** {current_sheet} {sheet_description}
+    **Date:** {current_date}
+    **Frequency:** {freq_display}
+    **Benchmark:** {current_benchmark}
+    **Window:** {window_display}
+    **Tickers:** {len(st.session_state.rrg_selected_tickers)} selected
+    """)
 
 else:
     st.info("👈 Configure settings in the sidebar and click 'Load Data' to get started")

@@ -85,7 +85,7 @@ CREATE TABLE fundamentals_staging (
     LIKE fundamentals INCLUDING ALL
 );
 
-CREATE VIEW fundamental_ratios AS
+CREATE MATERIALIZED VIEW fundamental_ratios AS
 WITH price_on_report_date AS (
     SELECT o.ticker, o.trade_date AS price_date, o.price_close
     FROM ohlcv o
@@ -156,7 +156,7 @@ FROM fundamentals f
 JOIN enterprise_value_calc e
   ON f.ticker = e.ticker AND f.period_end_date = e.period_end_date AND f.report_type = e.report_type;
 
-CREATE VIEW fundamental_per_share AS
+CREATE MATERIALIZED VIEW fundamental_per_share AS
 SELECT
     f.ticker,
     f.period_end_date,
@@ -178,6 +178,7 @@ CREATE TABLE daily_log_returns (
     PRIMARY KEY (ticker, trade_date)
 );
 
+
 CREATE EXTENSION plpython3u;    
 
 CREATE TABLE adr_whitelist (
@@ -188,3 +189,8 @@ CREATE TABLE adr_whitelist (
         notes TEXT,
         date_added DATE DEFAULT CURRENT_DATE
 );
+
+CREATE INDEX IF NOT EXISTS idx_daily_log_returns_ticker_date 
+ON daily_log_returns(ticker, trade_date DESC);
+
+
