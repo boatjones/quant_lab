@@ -27,7 +27,8 @@ RETURNS TABLE (
     market_cap NUMERIC,
     rs_percentile NUMERIC,
     ebit NUMERIC,
-    revenue_cagr_3y NUMERIC
+    revenue_cagr_3y NUMERIC,
+    pe_ratio NUMERIC
 ) AS $$
     WITH current_prices AS (
         -- Get the most recent price for each ticker
@@ -97,7 +98,8 @@ RETURNS TABLE (
         -- Get the most recent market cap from fundamental_ratios MATERIALIZED VIEW
         SELECT DISTINCT ON (ticker)
             ticker,
-            market_cap
+            market_cap,
+            pe_ratio
         FROM fundamental_ratios
         WHERE market_cap IS NOT NULL
         ORDER BY ticker, period_end_date DESC
@@ -113,7 +115,8 @@ RETURNS TABLE (
         ROUND(mc.market_cap::NUMERIC, 0) as market_cap,
         ROUND(rs.rs_percentile::NUMERIC, 2) as rs_percentile,
         ROUND(le.ebit::NUMERIC, 0) as ebit,
-        ROUND(rc.cagr_3y::NUMERIC, 4) as revenue_cagr_3y
+        ROUND(rc.cagr_3y::NUMERIC, 4) as revenue_cagr_3y,
+        ROUND(mc.pe_ratio::NUMERIC, 2) as pe_ratio
     FROM stocks s
     INNER JOIN current_prices cp ON s.ticker = cp.ticker
     INNER JOIN rs_calculation rs ON s.ticker = rs.ticker
