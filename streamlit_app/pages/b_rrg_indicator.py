@@ -111,8 +111,9 @@ def load_tickers_from_excel(filepath, sheet_name):
         for path in paths_to_try:
             if path.exists():
                 df = pd.read_excel(path, sheet_name=sheet_name)
-                filtered_df = df[df["Show"].notna()]
-                return filtered_df["Ticker"].tolist()
+                df.columns = df.columns.str.upper()
+                filtered_df = df[df["SHOW"].notna()]
+                return filtered_df["TICKER"].tolist()
         
         st.error(f"Could not find {filepath} in any of these locations:")
         for p in paths_to_try:

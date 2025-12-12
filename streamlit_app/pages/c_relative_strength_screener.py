@@ -151,26 +151,38 @@ if run_button:
                 # Format the dataframe for display
                 df_display = df.copy()
                 
-                # Format market cap in millions
-                df_display['market_cap'] = df_display['market_cap'].apply(lambda x: f"${x/1_000_000:.1f}M")
+                # Auto-format based on column patterns
+                for col in df_display.columns:
+                    if col == 'market_cap':
+                        df_display[col] = df_display[col].apply(lambda x: f"${x/1_000_000:.1f}M")
+                    elif col == 'ebit':
+                        df_display[col] = df_display[col].apply(lambda x: f"${x/1_000_000:.1f}M")
+                    elif col == 'current_price':
+                        df_display[col] = df_display[col].apply(lambda x: f"${x:.2f}")
+                    elif col.endswith('_percentile'):
+                        df_display[col] = df_display[col].apply(lambda x: f"{x:.1f}")
+                    elif col.endswith('_cagr') or col.endswith('_cagr_3y'):
+                        df_display[col] = df_display[col].apply(lambda x: f"{x*100:.1f}%")
+                    elif col == 'pe_ratio':
+                        df_display[col] = df_display[col].apply(lambda x: f"{x:.1f}x" if pd.notna(x) else 'N/A')
+
+                # Auto-generate display names from column names
+                display_names = {
+                    'ticker': 'Ticker',
+                    'company_name': 'Company',
+                    'sector': 'Sector',
+                    'industry': 'Industry',
+                    'exchange': 'Exchange',
+                    'current_price': 'Price',
+                    'market_cap': 'Market Cap',
+                    'rs_percentile': 'RS %ile',
+                    'ebit': 'EBIT',
+                    'revenue_cagr_3y': 'Rev CAGR 3Y',
+                    'pe_ratio': 'P/E'
+                }
                 
-                # Format EBIT in millions
-                df_display['ebit'] = df_display['ebit'].apply(lambda x: f"${x/1_000_000:.1f}M")
-                
-                # Format price
-                df_display['current_price'] = df_display['current_price'].apply(lambda x: f"${x:.2f}")
-                
-                # Format percentiles
-                df_display['rs_percentile'] = df_display['rs_percentile'].apply(lambda x: f"{x:.1f}")
-                
-                # Format CAGR as percentage
-                df_display['revenue_cagr_3y'] = df_display['revenue_cagr_3y'].apply(lambda x: f"{x*100:.1f}%")
-                
-                # Rename columns for display
-                df_display.columns = [
-                    'Ticker', 'Company', 'Sector', 'Industry', 'Exchange',
-                    'Price', 'Market Cap', 'RS %ile', 'EBIT', 'Rev CAGR 3Y'
-                ]
+                # Display columns
+                df_display = df_display.rename(columns=display_names)
                 
                 # Display the dataframe
                 st.dataframe(
