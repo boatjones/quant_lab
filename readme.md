@@ -19,13 +19,14 @@ To house the Python and Jupyter notebooks for quant/systematic investing and tra
 4)	FMP maintenance load for fundamentals
 5)	Take existing relative strength study and adapt to local database of prices with fundamental filtering
 6)	Take existing relative rotation graph study and adapt to local database
-7)	Strategy exploration
-8)	Strategy backtesting
-9)	Strategy implementation in Interactive Brokers for paper trading
-10)	Loop steps 7-9 to add and vet strategies
-11)	Deployment of winning strategies in real portfolio with money
-12)	Build in additional asset types
-13)	Incorporate AI/ML models where appropriate
+7)  Apply Monte Carlo simulation to parameters of RS Screener for walk-forward backtesting.  Performance surfaces derived using local database for iterations:
+    a)	Strategy exploration
+    b)	Strategy backtesting
+    c)	Strategy implementation in Interactive Brokers for paper trading
+8)	Loop steps 7-9 to add and vet strategies
+9)	Deployment of winning strategies in real portfolio with money
+10)	Build in additional asset types
+11)	Incorporate AI/ML models where appropriate
 
 ```
  -- Directory Structure --

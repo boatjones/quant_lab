@@ -515,3 +515,7 @@ SELECT * FROM screener_winners(10, 1000000, 126, 1000000, 0.0, 50);
 SELECT * FROM screener_winners();
 
 DROP FUNCTION screener_winners(numeric,numeric,integer,numeric,numeric,numeric);
+
+select * from fundamentals where ticker = 'KNSA'
+
+select * from ohlcv where ticker = 'AMPS'
