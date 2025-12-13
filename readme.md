@@ -23,7 +23,7 @@ To house the Python and Jupyter notebooks for quant/systematic investing and tra
     a)	Strategy exploration
     b)	Strategy backtesting
     c)	Strategy implementation in Interactive Brokers for paper trading
-8)	Loop steps 7-9 to add and vet strategies
+8)	Loop steps in 7 to add and vet strategies
 9)	Deployment of winning strategies in real portfolio with money
 10)	Build in additional asset types
 11)	Incorporate AI/ML models where appropriate
